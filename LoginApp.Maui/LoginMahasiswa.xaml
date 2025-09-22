@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LoginApp.Maui.ViewsMahasiswa.LoginMahasiswa"
+             Title="LoginMahasiswa">
+
+    <ScrollView>
+        <VerticalStackLayout BackgroundColor="White">
+            <!-- Foto Logo Untar-->
+            <Frame BackgroundColor="White" WidthRequest="400" HeightRequest="250" Margin="0,0,0,50" Padding="0" BorderColor="White">
+                <Image Source="logountar.png" WidthRequest="380" HeightRequest="350" VerticalOptions="Center" HorizontalOptions="Center" />
+            </Frame>
+
+            <!--Sign In-->
+            <StackLayout Orientation="Vertical" Spacing="10" Margin="0,50,0,0">
+                <Label Text="Sign In Mahasiswa" FontAttributes="Bold" FontSize="Large" TextColor="Black" HorizontalOptions="Center" />
+            </StackLayout>
+       
+
+            <!--Gmail and password-->
+            <Grid RowDefinitions="*,*" Margin="0,50,0,0" Padding="10" RowSpacing="10" HorizontalOptions="Center">
+                <!--Gmail-->
+                <StackLayout Orientation="Horizontal">
+                    <Entry x:Name="gmailEntry" WidthRequest="400" HeightRequest="50" Margin="10,0,0,0" Placeholder="someone@***.untar.ac.id" FontAttributes="Bold" />
+                </StackLayout>
+
+                <!--Password-->
+                <StackLayout Orientation="Horizontal" Grid.Row="1">
+                    <Entry x:Name="passwordEntry" IsPassword="True" WidthRequest="400" HeightRequest="50" Margin="10,0,0,0" Placeholder="Password" FontAttributes="Bold" />
+                </StackLayout>
+            </Grid>
+
+            <!--Sign Button-->
+            <Button Text="Sign In"
+                    Clicked="OnLoginClicked"
+                    FontAttributes="Bold"
+                    CornerRadius="10"
+                    FontSize="20"
+                    WidthRequest="180"
+                    VerticalOptions="Center"
+                    Margin="0,20,0,0" />
+
+            <!--Sign Up-->
+            <StackLayout Margin="0,35,0,0" Orientation="Horizontal" HorizontalOptions="Center">
+                <Label Text="New User?" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Blue" FontSize="Small"></Label>
+                <Button Text="Sign Up"
+            FontSize="Small"
+            TextColor="Green"
+            FontAttributes="Bold"
+            BorderWidth="0"
+            VerticalOptions="Center"
+            WidthRequest="100"
+            Margin="40,0,0,0"
+            BackgroundColor="LightGray"
+            Clicked="OnSignUpClicked" />
+
+            </StackLayout>
+
+
+            <!--Back to login user Button-->
+            <Button Text="Back"
+            Clicked="BackClicked"
+            FontAttributes="Bold"
+            BackgroundColor="DarkRed"
+            CornerRadius="10"
+            FontSize="20"
+            WidthRequest="350"
+            VerticalOptions="Center"
+            Margin="0,50,0,100" />
+        
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

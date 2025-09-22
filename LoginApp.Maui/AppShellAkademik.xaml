@@ -1,0 +1,32 @@
+﻿<Shell
+    x:Class="LoginApp.Maui.AppShellAkademik"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:LoginApp.Maui"
+    xmlns:views="clr-namespace:LoginApp.Maui.ViewsAkademik"
+    xmlns:viewmodel="clr-namespace:LoginApp.Maui.ViewModels"
+    x:DataType="viewmodel:AppShellViewModel"
+    Shell.TabBarIsVisible="False"
+    Shell.FlyoutBackgroundColor="White">
+
+    <!-- Flyout Items -->
+    <FlyoutItem Title="Home" Icon="home_icon.png" Route="home">
+        <ShellContent ContentTemplate="{DataTemplate views:HomePageAkademik}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Input Jadwal" Icon="rekap.jpg">
+        <ShellContent ContentTemplate="{DataTemplate views:InputJadwal}" />
+    </FlyoutItem>
+
+    <Shell.FlyoutFooter>
+        <VerticalStackLayout Padding="20">
+            <Button Command="{Binding LogoutCommand}"
+                BackgroundColor="Red"
+                Text="Logout"
+                TextColor="White"
+                FontAttributes="Bold"
+                FontSize="20"/>
+        </VerticalStackLayout>
+    </Shell.FlyoutFooter>
+
+</Shell>

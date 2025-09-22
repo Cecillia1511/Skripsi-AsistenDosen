@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Shell
+        x:Class="LoginApp.Maui.AppShellKoordinator"
+        xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+        xmlns:local="clr-namespace:LoginApp.Maui"
+        xmlns:views="clr-namespace:LoginApp.Maui.ViewsKoordinator"
+        xmlns:viewmodel="clr-namespace:LoginApp.Maui.ViewModels"
+        xmlns:mahasiswa="clr-namespace:LoginApp.Maui.ViewsMahasiswa"
+        x:DataType="viewmodel:AppShellViewModel"
+        Shell.TabBarIsVisible="False"
+        Shell.FlyoutBackgroundColor="#f0f2f5">
+
+    <Shell.FlyoutContentTemplate>
+        <DataTemplate>
+            <ScrollView>
+                <StackLayout Padding="10" Spacing="0">
+
+                    <!-- Home -->
+                    <Grid ColumnDefinitions="Auto,*" Padding="14,12" BackgroundColor="Transparent">
+                        <Grid.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnFlyoutItemTapped" CommandParameter="//home" />
+                        </Grid.GestureRecognizers>
+                        <Image Grid.Column="0"
+                               Source="home_icon.png"
+                               WidthRequest="32"
+                               HeightRequest="32"
+                               VerticalOptions="Center"
+                               Margin="0,0,14,0" />
+                        <Label Grid.Column="1"
+                               Text="Home"
+                               FontSize="16"
+                               VerticalOptions="Center"
+                               TextColor="Black" />
+                    </Grid>
+
+                    <!-- Asisten Dosen -->
+                    <Grid ColumnDefinitions="Auto,*" Padding="14,12" BackgroundColor="Transparent">
+                        <Grid.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnFlyoutItemTapped" CommandParameter="//asistendosen" />
+                        </Grid.GestureRecognizers>
+                        <Image Grid.Column="0"
+                               Source="asisten_icon.png"
+                               WidthRequest="32"
+                               HeightRequest="32"
+                               VerticalOptions="Center"
+                               Margin="0,0,14,0" />
+                        <Label Grid.Column="1"
+                               Text="Asisten Dosen"
+                               FontSize="16"
+                               VerticalOptions="Center"
+                               TextColor="Black" />
+                    </Grid>
+
+                    <!-- Data Mata Kuliah -->
+                    <Grid ColumnDefinitions="Auto,*" Padding="14,12" BackgroundColor="Transparent">
+                        <Grid.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnFlyoutItemTapped" CommandParameter="//datamatakuliah" />
+                        </Grid.GestureRecognizers>
+                        <Image Grid.Column="0"
+                               Source="mata_kuliah_icon.jpg"
+                               WidthRequest="32"
+                               HeightRequest="32"
+                               VerticalOptions="Center"
+                               Margin="0,0,14,0" />
+                        <Label Grid.Column="1"
+                               Text="Data Mata Kuliah"
+                               FontSize="16"
+                               VerticalOptions="Center"
+                               TextColor="Black" />
+                    </Grid>
+
+                    <!-- Jadwal Mengajar -->
+                    <Grid ColumnDefinitions="Auto,*" Padding="14,12" BackgroundColor="Transparent">
+                        <Grid.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnFlyoutItemTapped" CommandParameter="//jadwalmengajar" />
+                        </Grid.GestureRecognizers>
+                        <Image Grid.Column="0"
+                               Source="schedule_icon.png"
+                               WidthRequest="32"
+                               HeightRequest="32"
+                               VerticalOptions="Center"
+                               Margin="0,0,14,0" />
+                        <Label Grid.Column="1"
+                               Text="Jadwal Mengajar"
+                               FontSize="16"
+                               VerticalOptions="Center"
+                               TextColor="Black" />
+                    </Grid>
+
+                    <!-- Akun Asisten Dosen -->
+                    <Grid ColumnDefinitions="Auto,*" Padding="14,12" BackgroundColor="Transparent">
+                        <Grid.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnFlyoutItemTapped" CommandParameter="//akunasistendosen" />
+                        </Grid.GestureRecognizers>
+                        <Image Grid.Column="0"
+                               Source="account_icon.png"
+                               WidthRequest="32"
+                               HeightRequest="32"
+                               VerticalOptions="Center"
+                               Margin="0,0,14,0" />
+                        <Label Grid.Column="1"
+                               Text="Akun Asisten Dosen"
+                               FontSize="16"
+                               VerticalOptions="Center"
+                               TextColor="Black" />
+                    </Grid>
+
+                    <!-- Persetujuan -->
+                    <Grid ColumnDefinitions="Auto,*" Padding="14,12" BackgroundColor="Transparent">
+                        <Grid.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnFlyoutItemTapped" CommandParameter="//persetujuan" />
+                        </Grid.GestureRecognizers>
+                        <Image Grid.Column="0"
+                               Source="sign_icon.png"
+                               WidthRequest="32"
+                               HeightRequest="32"
+                               VerticalOptions="Center"
+                               Margin="0,0,14,0" />
+                        <Label Grid.Column="1"
+                               Text="Persetujuan"
+                               FontSize="16"
+                               VerticalOptions="Center"
+                               TextColor="Black" />
+                    </Grid>
+
+                </StackLayout>
+            </ScrollView>
+        </DataTemplate>
+    </Shell.FlyoutContentTemplate>
+
+    <FlyoutItem Title="Home" Icon="home_icon.png" Route="home">
+        <ShellContent ContentTemplate="{DataTemplate views:HomePageKoordinator}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Asisten Dosen" Icon="asisten_icon.png" Route="asistendosen">
+        <ShellContent ContentTemplate="{DataTemplate views:AsistenDosen}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Data Mata Kuliah" Icon="mata_kuliah_icon.jpg" Route="datamatakuliah">
+        <ShellContent ContentTemplate="{DataTemplate views:DataMataKuliah}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Jadwal Mengajar" Icon="schedule_icon.png" Route="jadwalmengajar">
+        <ShellContent ContentTemplate="{DataTemplate views:JadwalMengajarAsdos}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Akun Asisten Dosen" Icon="account_icon.png" Route="akunasistendosen">
+        <ShellContent ContentTemplate="{DataTemplate views:AkunAsistenDosen}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Persetujuan" Icon="sign_icon.png" Route="persetujuan">
+        <ShellContent ContentTemplate="{DataTemplate views:PersetujuanPresensi}" />
+    </FlyoutItem>
+
+    <!-- Sidebar Footer -->
+    <Shell.FlyoutFooter>
+        <VerticalStackLayout Padding="20">
+            <Button Command="{Binding LogoutCommand}"
+                    BackgroundColor="Red"
+                    Text="Logout"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    FontSize="20"/>
+        </VerticalStackLayout>
+    </Shell.FlyoutFooter>
+
+</Shell>

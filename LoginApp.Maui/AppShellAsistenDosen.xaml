@@ -1,0 +1,44 @@
+<Shell
+    x:Class="LoginApp.Maui.AppShellAsistenDosen"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:LoginApp.Maui"
+    xmlns:views="clr-namespace:LoginApp.Maui.ViewsAsistenDosen"
+    xmlns:viewmodel="clr-namespace:LoginApp.Maui.ViewModels"
+    x:DataType="viewmodel:AppShellViewModel"
+    Shell.TabBarIsVisible="False"
+    Shell.FlyoutBackgroundColor="White">
+
+    <!-- Flyout Items -->
+    <FlyoutItem Title="Home" Icon="home_icon.png" Route="home">
+        <ShellContent ContentTemplate="{DataTemplate views:HomePageAsistenDosen}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Jadwal Mengajar" Icon="schedule_icon.png">
+        <ShellContent ContentTemplate="{DataTemplate views:JadwalMengajar}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Pertemuan" Icon="time.jpeg">
+        <ShellContent ContentTemplate="{DataTemplate views:Pertemuan}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Presensi" Icon="presensi.jpeg">
+        <ShellContent ContentTemplate="{DataTemplate views:PresensiPage}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Rekapitulasi" Icon="rekap.jpg">
+        <ShellContent ContentTemplate="{DataTemplate views:Rekapitulasi}" />
+    </FlyoutItem>
+
+
+    <Shell.FlyoutFooter>
+        <VerticalStackLayout Padding="20">
+            <Button Command="{Binding LogoutCommand}"
+                    BackgroundColor="Red"
+                    Text="Logout"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    FontSize="20"/>
+        </VerticalStackLayout>
+    </Shell.FlyoutFooter>
+</Shell>

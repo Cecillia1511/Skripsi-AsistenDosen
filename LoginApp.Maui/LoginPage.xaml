@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodel="clr-namespace:LoginApp.Maui.ViewModels"
+             x:DataType="viewmodel:LoginPageViewModel"
+             x:Class="LoginApp.Maui.LoginPage"
+             Title="LoginPage">
+   
+    <ScrollView>
+        
+        <VerticalStackLayout BackgroundColor="White">
+            <!-- Foto Logo Untar-->
+            <Frame BackgroundColor="White" WidthRequest="400" HeightRequest="250" Margin="0,0,0,50" Padding="0" BorderColor="White">
+                <Image Source="logountar.png" WidthRequest="400" HeightRequest="350" VerticalOptions="Center" HorizontalOptions="Center"></Image>
+            </Frame>
+
+            <!--Welcome-->
+            <StackLayout Orientation="Vertical" Spacing="10" Margin="0,0,0,0">
+                <!--<Label Text="Welcome" FontAttributes="Bold" FontSize="Large" TextColor="Black" HorizontalOptions="Center"></Label>-->
+                <Label Text="Asisten Dosen FTI Untar" FontAttributes="Bold" TextColor="Black" FontSize="Header" HorizontalOptions="Center"></Label>
+            </StackLayout>
+        
+            <!--Username and password-->
+            <Grid RowDefinitions="*,*,*" Margin="0,50,0,0" Padding="10" RowSpacing="10" HorizontalOptions="Center">
+                <!--Username-->
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="icon_user.jpg" WidthRequest="30" HeightRequest="30"></Image>
+                    <Entry Text="{Binding Username}" WidthRequest="400" HeightRequest="50" Margin="10,0,0,0" Placeholder="Username" FontAttributes="Bold"></Entry>
+                </StackLayout>
+
+                <!--Password-->
+                <StackLayout Orientation="Horizontal" Grid.Row="1">
+                    <Image Source="icon_lock.png" BackgroundColor="Transparent" WidthRequest="30" HeightRequest="30"></Image>
+                    <Entry Text="{Binding Password}" IsPassword="True" WidthRequest="400" HeightRequest="50" Margin="10,0,0,0" Placeholder="Password" FontAttributes="Bold"></Entry>
+                </StackLayout>
+
+            </Grid>
+        
+            <!--Sign Button-->
+            <Button Command="{Binding SignInCommand}" FontAttributes="Bold" Text="Sign In" CornerRadius="10" FontSize="20" WidthRequest="180" VerticalOptions="Center" Margin="285,20,0,0"></Button>
+        
+            <!--Sign Up-->
+            <!--<StackLayout Margin="0,35,0,0" Orientation="Horizontal" HorizontalOptions="Center">
+                <Label Text="New User?" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Blue" FontSize="Small"></Label>
+                <Button Text="Sign Up" FontSize="Small" TextColor="Green" FontAttributes="Bold" BorderWidth="0" VerticalOptions="Center" WidthRequest="100" Margin="40,0,0,0" BackgroundColor="Transparent"> </Button>
+            </StackLayout>-->
+        
+            <!--Button Mahasiswa-->
+            <Button x:Name="LoginMahasiswa" Clicked="SignInMahasiswaButton_Clicked" Text="Login Mahasiswa" BackgroundColor="DarkRed" FontAttributes="Bold" CornerRadius="10" FontSize="20" WidthRequest="300" Margin="0,75,0,100"></Button>
+        
+        </VerticalStackLayout>
+
+    </ScrollView>
+</ContentPage>

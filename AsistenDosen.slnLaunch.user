@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "LoginApp\\LoginApp.Api.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "LoginApp.Maui\\LoginApp.Maui.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

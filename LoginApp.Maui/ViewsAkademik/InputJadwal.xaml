@@ -1,0 +1,340 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:LoginApp.Maui.ViewModels"
+             x:Class="LoginApp.Maui.ViewsAkademik.InputJadwal"
+             Title="Input Jadwal Perkuliahan">
+
+
+    <ScrollView>
+        <VerticalStackLayout Padding="25" Spacing="20" BackgroundColor="#f5f5f5">
+
+            <Label Text="Input Jadwal Perkuliahan"
+                   FontSize="30"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   TextColor="Black"
+                   Margin="0,10,0,30" />
+
+            <Grid ColumnDefinitions="225,*"
+                  RowSpacing="20"
+                  ColumnSpacing="20"
+                  Padding="0,0,40,0">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <!-- Tahun Akademik -->
+                    <RowDefinition Height="Auto"/>
+                    <!-- Mata Kuliah -->
+                    <RowDefinition Height="Auto"/>
+                    <!-- Kelas -->
+                    <RowDefinition Height="Auto"/>
+                    <!-- Dosen -->
+                    <RowDefinition Height="Auto"/>
+                    <!-- Hari -->
+                    <RowDefinition Height="Auto"/>
+                    <!-- Waktu -->
+                    <RowDefinition Height="Auto"/>
+                    <!-- Ruangan -->
+                </Grid.RowDefinitions>
+
+                <!-- ======= Tahun Akademik ======= -->
+                <Label Grid.Row="0" Grid.Column="0"
+                       Text="Tahun Akademik"
+                       FontSize="23"
+                       FontAttributes="Bold"
+                       VerticalOptions="Center" />
+
+                <Grid Grid.Row="0" Grid.Column="1" RowSpacing="5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <Frame Grid.Row="0" BorderColor="#ddd" CornerRadius="8" Padding="0" HasShadow="False">
+                        <Button Text="{Binding TahunAkademikLabel}"
+                                Command="{Binding ToggleTahunAkademikDropdownCommand}"
+                                BackgroundColor="White"
+                                TextColor="Black"
+                                HeightRequest="45"/>
+                    </Frame>
+
+                    <Frame Grid.Row="1" IsVisible="{Binding IsTahunAkademikDropdownVisible}"
+                           BorderColor="#ddd" CornerRadius="8" Padding="5" HasShadow="True" ZIndex="10">
+                        <VerticalStackLayout>
+                            <SearchBar Placeholder="Cari tahun akademik..."
+                                       Text="{Binding TahunAkademikSearchText}" />
+                            <CollectionView ItemsSource="{Binding FilteredTahunAkademikList}"
+                                            SelectionMode="Single"
+                                            SelectionChanged="OnTahunAkademikSelected"
+                                            HeightRequest="150"
+                                            BackgroundColor="White">
+                                <CollectionView.ItemTemplate>
+                                    <DataTemplate>
+                                        <Label Text="{Binding Label}" Padding="12" />
+                                    </DataTemplate>
+                                </CollectionView.ItemTemplate>
+                            </CollectionView>
+                        </VerticalStackLayout>
+                    </Frame>
+                </Grid>
+
+                <!-- ======= Mata Kuliah ======= -->
+                <Label Grid.Row="1" Grid.Column="0"
+                       Text="Mata Kuliah"
+                       FontSize="23"
+                       FontAttributes="Bold"
+                       VerticalOptions="Center" />
+
+                <Grid Grid.Row="1" Grid.Column="1" RowSpacing="5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <Frame Grid.Row="0" BorderColor="#ddd" CornerRadius="8" Padding="0" HasShadow="False">
+                        <Button Text="{Binding MataKuliahLabel}"
+                                Command="{Binding ToggleMataKuliahDropdownCommand}"
+                                BackgroundColor="White"
+                                TextColor="Black"
+                                HeightRequest="45"/>
+                    </Frame>
+
+                    <Frame Grid.Row="1" IsVisible="{Binding IsMataKuliahDropdownVisible}"
+                           BorderColor="#ddd" CornerRadius="8" Padding="5" HasShadow="True" ZIndex="10">
+                        <VerticalStackLayout>
+                            <SearchBar Placeholder="Cari mata kuliah..."
+                                       Text="{Binding MataKuliahSearchText}" />
+                            <CollectionView ItemsSource="{Binding FilteredMataKuliahList}"
+                                            SelectionMode="Single"
+                                            SelectionChanged="OnMataKuliahSelected"
+                                            HeightRequest="150"
+                                            BackgroundColor="White">
+                                <CollectionView.ItemTemplate>
+                                    <DataTemplate>
+                                        <Label Text="{Binding Label}" Padding="12" />
+                                    </DataTemplate>
+                                </CollectionView.ItemTemplate>
+                            </CollectionView>
+                        </VerticalStackLayout>
+                    </Frame>
+                </Grid>
+
+                <!-- ======= Kelas ======= -->
+                <Label Grid.Row="2" Grid.Column="0"
+                       Text="Kelas"
+                       FontSize="23"
+                       FontAttributes="Bold"
+                       VerticalOptions="Center" />
+
+                <Grid Grid.Row="2" Grid.Column="1" RowSpacing="5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <Frame Grid.Row="0" BorderColor="#ddd" CornerRadius="8" Padding="0" HasShadow="False">
+                        <Button Text="{Binding KelasLabel}"
+                                Command="{Binding ToggleKelasDropdownCommand}"
+                                BackgroundColor="White"
+                                TextColor="Black"
+                                HeightRequest="45"/>
+                    </Frame>
+
+                    <Frame Grid.Row="1" IsVisible="{Binding IsKelasDropdownVisible}"
+                           BorderColor="#ddd" CornerRadius="8" Padding="5" HasShadow="True" ZIndex="10">
+                        <VerticalStackLayout>
+                            <SearchBar Placeholder="Cari kelas..."
+                                       Text="{Binding KelasSearchText}" />
+                            <CollectionView ItemsSource="{Binding FilteredKelasList}"
+                                            SelectionMode="Single"
+                                            SelectionChanged="OnKelasSelected"
+                                            HeightRequest="150"
+                                            BackgroundColor="White">
+                                <CollectionView.ItemTemplate>
+                                    <DataTemplate>
+                                        <Label Text="{Binding Label}" Padding="12" />
+                                    </DataTemplate>
+                                </CollectionView.ItemTemplate>
+                            </CollectionView>
+                        </VerticalStackLayout>
+                    </Frame>
+                </Grid>
+
+                <!-- ======= Dosen ======= -->
+                <Label Grid.Row="3" Grid.Column="0"
+                       Text="Dosen"
+                       FontSize="23"
+                       FontAttributes="Bold"
+                       VerticalOptions="Center" />
+
+                <Grid Grid.Row="3" Grid.Column="1" RowSpacing="5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <Frame Grid.Row="0" BorderColor="#ddd" CornerRadius="8" Padding="0" HasShadow="False">
+                        <Button Text="{Binding DosenLabel}"
+                                Command="{Binding ToggleDosenDropdownCommand}"
+                                BackgroundColor="White"
+                                TextColor="Black"
+                                HeightRequest="45"/>
+                    </Frame>
+
+                    <Frame Grid.Row="1" IsVisible="{Binding IsDosenDropdownVisible}"
+                           BorderColor="#ddd" CornerRadius="8" Padding="5" HasShadow="True" ZIndex="10">
+                        <VerticalStackLayout>
+                            <SearchBar Placeholder="Cari dosen..."
+                                       Text="{Binding DosenSearchText}" />
+                            <CollectionView ItemsSource="{Binding FilteredDosenList}"
+                                            SelectionMode="Single"
+                                            SelectionChanged="OnDosenSelected"
+                                            HeightRequest="150"
+                                            BackgroundColor="White">
+                                <CollectionView.ItemTemplate>
+                                    <DataTemplate>
+                                        <Label Text="{Binding Label}" Padding="12" />
+                                    </DataTemplate>
+                                </CollectionView.ItemTemplate>
+                            </CollectionView>
+                        </VerticalStackLayout>
+                    </Frame>
+                </Grid>
+
+                <!-- ======= Hari ======= -->
+                <Label Grid.Row="4" Grid.Column="0"
+                       Text="Hari"
+                       FontSize="23"
+                       FontAttributes="Bold"
+                       VerticalOptions="Center" />
+
+                <Grid Grid.Row="4" Grid.Column="1" RowSpacing="5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <Frame Grid.Row="0" BorderColor="#ddd" CornerRadius="8" Padding="0" HasShadow="False">
+                        <Button Text="{Binding HariLabel}"
+                                Command="{Binding ToggleHariDropdownCommand}"
+                                BackgroundColor="White"
+                                TextColor="Black"
+                                HeightRequest="45"/>
+                    </Frame>
+
+                    <Frame Grid.Row="1" IsVisible="{Binding IsHariDropdownVisible}"
+                           BorderColor="#ddd" CornerRadius="8" Padding="5" HasShadow="True" ZIndex="10">
+                        <VerticalStackLayout>
+                            <SearchBar Placeholder="Cari hari..."
+                                       Text="{Binding HariSearchText}" />
+                            <CollectionView ItemsSource="{Binding FilteredHariList}"
+                                            SelectionMode="Single"
+                                            SelectionChanged="OnHariSelected"
+                                            HeightRequest="150"
+                                            BackgroundColor="White">
+                                <CollectionView.ItemTemplate>
+                                    <DataTemplate>
+                                        <Label Text="{Binding Label}" Padding="12" />
+                                    </DataTemplate>
+                                </CollectionView.ItemTemplate>
+                            </CollectionView>
+                        </VerticalStackLayout>
+                    </Frame>
+                </Grid>
+
+                <!-- ======= Waktu ======= -->
+                <Label Grid.Row="5" Grid.Column="0"
+                       Text="Waktu"
+                       FontSize="23"
+                       FontAttributes="Bold"
+                       VerticalOptions="Center" />
+
+                <Grid Grid.Row="5" Grid.Column="1" RowSpacing="5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <Frame Grid.Row="0" BorderColor="#ddd" CornerRadius="8" Padding="0" HasShadow="False">
+                        <Button Text="{Binding WaktuLabel}"
+                                Command="{Binding ToggleWaktuDropdownCommand}"
+                                BackgroundColor="White"
+                                TextColor="Black"
+                                HeightRequest="45"/>
+                    </Frame>
+
+                    <Frame Grid.Row="1" IsVisible="{Binding IsWaktuDropdownVisible}"
+                           BorderColor="#ddd" CornerRadius="8" Padding="5" HasShadow="True" ZIndex="10">
+                        <VerticalStackLayout>
+                            <SearchBar Placeholder="Cari waktu..."
+                                       Text="{Binding WaktuSearchText}" />
+                            <CollectionView ItemsSource="{Binding FilteredWaktuList}"
+                                            SelectionMode="Single"
+                                            SelectionChanged="OnWaktuSelected"
+                                            HeightRequest="150"
+                                            BackgroundColor="White">
+                                <CollectionView.ItemTemplate>
+                                    <DataTemplate>
+                                        <Label Text="{Binding Label}" Padding="12" />
+                                    </DataTemplate>
+                                </CollectionView.ItemTemplate>
+                            </CollectionView>
+                        </VerticalStackLayout>
+                    </Frame>
+                </Grid>
+
+                <!-- ======= Ruangan ======= -->
+                <Label Grid.Row="6" Grid.Column="0"
+                       Text="Ruangan"
+                       FontSize="23"
+                       FontAttributes="Bold"
+                       VerticalOptions="Center" />
+
+                <Grid Grid.Row="6" Grid.Column="1" RowSpacing="5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <Frame Grid.Row="0" BorderColor="#ddd" CornerRadius="8" Padding="0" HasShadow="False">
+                        <Button Text="{Binding RuanganLabel}"
+                                Command="{Binding ToggleRuanganDropdownCommand}"
+                                BackgroundColor="White"
+                                TextColor="Black"
+                                HeightRequest="45"/>
+                    </Frame>
+
+                    <Frame Grid.Row="1" IsVisible="{Binding IsRuanganDropdownVisible}"
+                           BorderColor="#ddd" CornerRadius="8" Padding="5" HasShadow="True" ZIndex="10">
+                        <VerticalStackLayout>
+                            <SearchBar Placeholder="Cari ruangan..."
+                                       Text="{Binding RuanganSearchText}" />
+                            <CollectionView ItemsSource="{Binding FilteredRuanganList}"
+                                            SelectionMode="Single"
+                                            SelectionChanged="OnRuanganSelected"
+                                            HeightRequest="150"
+                                            BackgroundColor="White">
+                                <CollectionView.ItemTemplate>
+                                    <DataTemplate>
+                                        <Label Text="{Binding Label}" Padding="12" />
+                                    </DataTemplate>
+                                </CollectionView.ItemTemplate>
+                            </CollectionView>
+                        </VerticalStackLayout>
+                    </Frame>
+                </Grid>
+
+            </Grid>
+
+            <Button Text="Simpan Jadwal"
+                    Command="{Binding SimpanJadwalCommand}"
+                    BackgroundColor="#007AFF"
+                    TextColor="White"
+                    CornerRadius="10"
+                    HeightRequest="50"
+                    Margin="0,30,0,10"
+                    HorizontalOptions="FillAndExpand" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LoginApp.Maui.GoogleLoginPage"
+             Title="GoogleLoginPage">
+    <VerticalStackLayout>
+
+        <WebView x:Name="GoogleWebView"
+         Navigated="OnNavigated"
+         Source="https://accounts.google.com/o/oauth2/v2/auth?client_id=1234567890-abcxyz.apps.googleusercontent.com&amp;redirect_uri=https://localhost:44536/api/mahasiswa/login-google&amp;response_type=id_token&amp;scope=openid%20email%20profile" />
+
+    </VerticalStackLayout>
+</ContentPage>
