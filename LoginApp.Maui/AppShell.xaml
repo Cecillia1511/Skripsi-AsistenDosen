@@ -17,4 +17,12 @@
         FlyoutItemIsVisible="False"
         Shell.FlyoutBehavior="Disabled"/>
 
+    <!-- Mahasiswa login page -->
+    <ShellContent
+        Title="Login Mahasiswa"
+        ContentTemplate="{DataTemplate mahasiswa:LoginMahasiswa}"
+        Route="LoginMahasiswa"
+        FlyoutItemIsVisible="False"
+        Shell.FlyoutBehavior="Disabled" />
+    
 </Shell>

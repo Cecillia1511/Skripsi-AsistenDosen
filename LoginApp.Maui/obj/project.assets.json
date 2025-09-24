@@ -39168,24 +39168,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\LENOVO IP3\\.nuget\\packages\\": {},
+    "C:\\Users\\Ellie\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\AsistenDosen\\LoginApp.Maui\\LoginApp.Maui.csproj",
+      "projectUniqueName": "C:\\Users\\Ellie\\source\\repos\\Skripsi-AsistenDosen\\LoginApp.Maui\\LoginApp.Maui.csproj",
       "projectName": "LoginApp.Maui",
-      "projectPath": "C:\\AsistenDosen\\LoginApp.Maui\\LoginApp.Maui.csproj",
-      "packagesPath": "C:\\Users\\LENOVO IP3\\.nuget\\packages\\",
-      "outputPath": "C:\\AsistenDosen\\LoginApp.Maui\\obj\\",
+      "projectPath": "C:\\Users\\Ellie\\source\\repos\\Skripsi-AsistenDosen\\LoginApp.Maui\\LoginApp.Maui.csproj",
+      "packagesPath": "C:\\Users\\Ellie\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Ellie\\source\\repos\\Skripsi-AsistenDosen\\LoginApp.Maui\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\LENOVO IP3\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Ellie\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

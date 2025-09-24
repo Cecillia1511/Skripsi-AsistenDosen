@@ -2,12 +2,11 @@
   "profiles": {
     "LoginApp.Api": {
       "commandName": "Project",
-      "dotnetRunMessages": true,
-      "launchBrowser": true,
-      "applicationUrl": "https://localhost:44356",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
-      }
+      },
+      "dotnetRunMessages": true,
+      "applicationUrl": "https://localhost:44356"
     },
     "IIS Express": {
       "commandName": "IISExpress",

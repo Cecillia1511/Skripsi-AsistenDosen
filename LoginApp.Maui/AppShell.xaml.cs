@@ -7,9 +7,14 @@ using Font = Microsoft.Maui.Font;
 
 namespace LoginApp.Maui
 {
+
     public partial class AppShell : Shell
     {
-        
+        public AppShell()
+        {
+            InitializeComponent();
+            BindingContext = new AppShellViewModel(); // ✅ add this line
+        }
         public static async Task DisplaySnackbarAsync(string message)
         {
             CancellationTokenSource cancellationTokenSource = new CancellationTokenSource();

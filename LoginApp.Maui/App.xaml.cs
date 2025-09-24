@@ -2,6 +2,7 @@
 using LoginApp.Maui.ViewsMahasiswa;
 using Microsoft.Extensions.Configuration;
 using System.Data;
+using System.Diagnostics;
 using System.Security.Cryptography.X509Certificates;
 
 namespace LoginApp.Maui
@@ -10,21 +11,25 @@ namespace LoginApp.Maui
     {
         public static User user;
         public static IConfiguration Configuration { get; private set; }
+
         public App()
         {
-            
-            InitializeComponent();
+            try
+            {
+                InitializeComponent();
 
-            Configuration = new ConfigurationBuilder()
-            .SetBasePath(AppContext.BaseDirectory)
-            .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
-            .Build();
+                Configuration = new ConfigurationBuilder()
+                    .SetBasePath(AppContext.BaseDirectory)
+                    .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+                    .Build();
 
-
-            MainPage = new NavigationPage(new LoginPage());
-
-        }  
-
-
+                MainPage = new AppShell();
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex); // or Debug.WriteLine
+                throw;
+            }
+        }
     }
 }
