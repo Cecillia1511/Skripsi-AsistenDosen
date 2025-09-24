@@ -16,6 +16,94 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "LoginApp.API.Controllers.JadwalController",
+    "Method": "GetAllJadwal",
+    "RelativePath": "api/Jadwal/All",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LoginApp.API.Controllers.JadwalController",
+    "Method": "InputJadwal",
+    "RelativePath": "api/Jadwal/Input",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "LoginApp.API.Controllers.JadwalController\u002BJadwalRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LoginApp.Api.Controllers.MahasiswaController",
+    "Method": "LoginMahasiswa",
+    "RelativePath": "api/Mahasiswa/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "mahasiswa",
+        "Type": "LoginApp.Api.Models.Mahasiswa",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LoginApp.Api.Controllers.MahasiswaController",
+    "Method": "RegisterMahasiswa",
+    "RelativePath": "api/Mahasiswa/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "mahasiswa",
+        "Type": "LoginApp.Api.Models.Mahasiswa",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LoginApp.Api.Controllers.UsersController",
+    "Method": "GetAllUsers",
+    "RelativePath": "api/Users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[LoginApp.Api.Models.User, LoginApp.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "LoginApp.Api.Controllers.UsersController",
+    "Method": "GetAsistenDosen",
+    "RelativePath": "api/Users/AsistenDosen",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "LoginApp.Api.Controllers.UsersController",
     "Method": "Login",
     "RelativePath": "api/Users/login",
@@ -25,7 +113,7 @@
     "Parameters": [
       {
         "Name": "user",
-        "Type": "LoginApp.Api.Models.User",
+        "Type": "LoginApp.Api.Models.UserRequest",
         "IsRequired": true
       }
     ],

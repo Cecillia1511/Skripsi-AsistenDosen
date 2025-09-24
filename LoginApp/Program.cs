@@ -18,7 +18,6 @@ builder.Services.AddDbContext<AppDbContext>(options =>
         ?? throw new InvalidOperationException("Connection 'AsistenDosen' is not found"));
 });
 
-
 // 🧪 Swagger untuk testing API
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -29,7 +28,6 @@ var jwtSettings = builder.Configuration.GetSection("Jwt");
 var secretKey = jwtSettings["Key"];
 if (string.IsNullOrEmpty(secretKey))
     throw new InvalidOperationException("JWT secret key is missing in configuration");
-
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
@@ -48,6 +46,13 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 
 var app = builder.Build();
 
+// 🛠️ Print startup info
+Console.WriteLine("🚀 LoginApp API is starting...");
+Console.WriteLine($"🌐 Environment: {app.Environment.EnvironmentName}");
+Console.WriteLine($"🔑 JWT Issuer: {jwtSettings["Issuer"]}");
+Console.WriteLine($"🔑 JWT Audience: {jwtSettings["Audience"]}");
+Console.WriteLine($"📡 Listening on: https://0.0.0.0:44356");
+
 // 🛠️ Konfigurasi pipeline
 if (app.Environment.IsDevelopment())
 {
@@ -63,6 +68,7 @@ app.UseHttpsRedirection();
 // 📡 Override Host agar cocok dengan IP lokal
 app.Use(async (context, next) =>
 {
+    Console.WriteLine($"➡️ Request: {context.Request.Method} {context.Request.Path}");
     context.Request.Host = new HostString("192.168.1.8:44356");
     await next();
 });
@@ -70,7 +76,6 @@ app.Use(async (context, next) =>
 // 🔐 Authorization (kalau pakai [Authorize] nanti)
 app.UseAuthentication();
 app.UseAuthorization();
-
 
 // 🚀 Aktifkan semua controller
 app.MapControllers();
