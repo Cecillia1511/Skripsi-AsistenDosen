@@ -169,7 +169,7 @@ public partial class InputJadwalViewModel : ObservableObject
 
         try
         {
-            var sukses = await _service.SimpanJadwalAsync(jadwal);
+            var (sukses, message) = await _service.SimpanJadwalAsync(jadwal);
             if (sukses)
             {
                 await Shell.Current.DisplayAlert("Sukses", "Jadwal berhasil disimpan", "OK");
@@ -177,7 +177,7 @@ public partial class InputJadwalViewModel : ObservableObject
             }
             else
             {
-                await Shell.Current.DisplayAlert("Gagal", "Server menolak data jadwal", "OK");
+                await Shell.Current.DisplayAlert("Gagal", $"Server menolak data jadwal:\n{message}", "OK");
             }
         }
         catch (Exception ex)

@@ -405,31 +405,31 @@
       "JadwalRequest": {
         "type": "object",
         "properties": {
-          "kode_MK": {
+          "kodeMK": {
             "type": "string",
             "nullable": true
           },
-          "tahunAkademik_ID": {
+          "tahunAkademik": {
             "type": "string",
             "nullable": true
           },
-          "nip": {
+          "dosen": {
             "type": "string",
             "nullable": true
           },
-          "hari_ID": {
+          "hari": {
             "type": "string",
             "nullable": true
           },
-          "waktu_ID": {
+          "waktu": {
             "type": "string",
             "nullable": true
           },
-          "ruangan_ID": {
+          "ruangan": {
             "type": "string",
             "nullable": true
           },
-          "kelas_ID": {
+          "kelas": {
             "type": "string",
             "nullable": true
           }

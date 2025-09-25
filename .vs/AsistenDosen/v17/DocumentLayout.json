@@ -3,40 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Ellie\\source\\repos\\Skripsi-AsistenDosen\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{40E84EA5-0D5D-4B2A-AB1A-A24BCCC072BB}|LoginApp\\LoginApp.Api.csproj|c:\\users\\ellie\\source\\repos\\skripsi-asistendosen\\loginapp\\controllers\\mahasiswacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40E84EA5-0D5D-4B2A-AB1A-A24BCCC072BB}|LoginApp\\LoginApp.Api.csproj|solutionrelative:loginapp\\controllers\\mahasiswacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2A2278E4-CE04-4503-B1E3-ADCF0E9ED714}|LoginApp.Maui\\LoginApp.Maui.csproj|c:\\users\\ellie\\source\\repos\\skripsi-asistendosen\\loginapp.maui\\services\\ijadwalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A2278E4-CE04-4503-B1E3-ADCF0E9ED714}|LoginApp.Maui\\LoginApp.Maui.csproj|solutionrelative:loginapp.maui\\services\\ijadwalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40E84EA5-0D5D-4B2A-AB1A-A24BCCC072BB}|LoginApp\\LoginApp.Api.csproj|c:\\users\\ellie\\source\\repos\\skripsi-asistendosen\\loginapp\\controllers\\matakuliahcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40E84EA5-0D5D-4B2A-AB1A-A24BCCC072BB}|LoginApp\\LoginApp.Api.csproj|solutionrelative:loginapp\\controllers\\matakuliahcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2A2278E4-CE04-4503-B1E3-ADCF0E9ED714}|LoginApp.Maui\\LoginApp.Maui.csproj|c:\\users\\ellie\\source\\repos\\skripsi-asistendosen\\loginapp.maui\\services\\jadwalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A2278E4-CE04-4503-B1E3-ADCF0E9ED714}|LoginApp.Maui\\LoginApp.Maui.csproj|solutionrelative:loginapp.maui\\services\\jadwalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40E84EA5-0D5D-4B2A-AB1A-A24BCCC072BB}|LoginApp\\LoginApp.Api.csproj|c:\\users\\ellie\\source\\repos\\skripsi-asistendosen\\loginapp\\controllers\\haricontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40E84EA5-0D5D-4B2A-AB1A-A24BCCC072BB}|LoginApp\\LoginApp.Api.csproj|solutionrelative:loginapp\\controllers\\haricontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2A2278E4-CE04-4503-B1E3-ADCF0E9ED714}|LoginApp.Maui\\LoginApp.Maui.csproj|c:\\users\\ellie\\source\\repos\\skripsi-asistendosen\\loginapp.maui\\viewskoordinator\\asistendosen.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A2278E4-CE04-4503-B1E3-ADCF0E9ED714}|LoginApp.Maui\\LoginApp.Maui.csproj|solutionrelative:loginapp.maui\\viewskoordinator\\asistendosen.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A2278E4-CE04-4503-B1E3-ADCF0E9ED714}|LoginApp.Maui\\LoginApp.Maui.csproj|c:\\users\\ellie\\source\\repos\\skripsi-asistendosen\\loginapp.maui\\viewmodels\\inputjadwalviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A2278E4-CE04-4503-B1E3-ADCF0E9ED714}|LoginApp.Maui\\LoginApp.Maui.csproj|solutionrelative:loginapp.maui\\viewmodels\\inputjadwalviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{40E84EA5-0D5D-4B2A-AB1A-A24BCCC072BB}|LoginApp\\LoginApp.Api.csproj|c:\\users\\ellie\\source\\repos\\skripsi-asistendosen\\loginapp\\controllers\\jadwalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{40E84EA5-0D5D-4B2A-AB1A-A24BCCC072BB}|LoginApp\\LoginApp.Api.csproj|solutionrelative:loginapp\\controllers\\jadwalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40E84EA5-0D5D-4B2A-AB1A-A24BCCC072BB}|LoginApp\\LoginApp.Api.csproj|c:\\users\\ellie\\source\\repos\\skripsi-asistendosen\\loginapp\\controllers\\dosencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40E84EA5-0D5D-4B2A-AB1A-A24BCCC072BB}|LoginApp\\LoginApp.Api.csproj|solutionrelative:loginapp\\controllers\\dosencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40E84EA5-0D5D-4B2A-AB1A-A24BCCC072BB}|LoginApp\\LoginApp.Api.csproj|c:\\users\\ellie\\source\\repos\\skripsi-asistendosen\\loginapp\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40E84EA5-0D5D-4B2A-AB1A-A24BCCC072BB}|LoginApp\\LoginApp.Api.csproj|solutionrelative:loginapp\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40E84EA5-0D5D-4B2A-AB1A-A24BCCC072BB}|LoginApp\\LoginApp.Api.csproj|c:\\users\\ellie\\source\\repos\\skripsi-asistendosen\\loginapp\\controllers\\ruangancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40E84EA5-0D5D-4B2A-AB1A-A24BCCC072BB}|LoginApp\\LoginApp.Api.csproj|solutionrelative:loginapp\\controllers\\ruangancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40E84EA5-0D5D-4B2A-AB1A-A24BCCC072BB}|LoginApp\\LoginApp.Api.csproj|c:\\users\\ellie\\source\\repos\\skripsi-asistendosen\\loginapp\\controllers\\kelascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40E84EA5-0D5D-4B2A-AB1A-A24BCCC072BB}|LoginApp\\LoginApp.Api.csproj|solutionrelative:loginapp\\controllers\\kelascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40E84EA5-0D5D-4B2A-AB1A-A24BCCC072BB}|LoginApp\\LoginApp.Api.csproj|c:\\users\\ellie\\source\\repos\\skripsi-asistendosen\\loginapp\\controllers\\tahunakademikcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40E84EA5-0D5D-4B2A-AB1A-A24BCCC072BB}|LoginApp\\LoginApp.Api.csproj|solutionrelative:loginapp\\controllers\\tahunakademikcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2A2278E4-CE04-4503-B1E3-ADCF0E9ED714}|LoginApp.Maui\\LoginApp.Maui.csproj|c:\\users\\ellie\\source\\repos\\skripsi-asistendosen\\loginapp.maui\\viewsakademik\\inputjadwal.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -50,134 +34,82 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DosenController.cs",
-              "DocumentMoniker": "C:\\Users\\Ellie\\source\\repos\\Skripsi-AsistenDosen\\LoginApp\\Controllers\\DosenController.cs",
-              "RelativeDocumentMoniker": "LoginApp\\Controllers\\DosenController.cs",
-              "ToolTip": "C:\\Users\\Ellie\\source\\repos\\Skripsi-AsistenDosen\\LoginApp\\Controllers\\DosenController.cs",
-              "RelativeToolTip": "LoginApp\\Controllers\\DosenController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T15:22:36.511Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\Users\\Ellie\\source\\repos\\Skripsi-AsistenDosen\\LoginApp\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "LoginApp\\Controllers\\UsersController.cs",
-              "ToolTip": "C:\\Users\\Ellie\\source\\repos\\Skripsi-AsistenDosen\\LoginApp\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "LoginApp\\Controllers\\UsersController.cs",
-              "ViewState": "AgIAAJQAAAAAAAAAAAAnwKcAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T15:22:14.219Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "RuanganController.cs",
-              "DocumentMoniker": "C:\\Users\\Ellie\\source\\repos\\Skripsi-AsistenDosen\\LoginApp\\Controllers\\RuanganController.cs",
-              "RelativeDocumentMoniker": "LoginApp\\Controllers\\RuanganController.cs",
-              "ToolTip": "C:\\Users\\Ellie\\source\\repos\\Skripsi-AsistenDosen\\LoginApp\\Controllers\\RuanganController.cs",
-              "RelativeToolTip": "LoginApp\\Controllers\\RuanganController.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAAAB0AAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T15:22:12.004Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "KelasController.cs",
-              "DocumentMoniker": "C:\\Users\\Ellie\\source\\repos\\Skripsi-AsistenDosen\\LoginApp\\Controllers\\KelasController.cs",
-              "RelativeDocumentMoniker": "LoginApp\\Controllers\\KelasController.cs",
-              "ToolTip": "C:\\Users\\Ellie\\source\\repos\\Skripsi-AsistenDosen\\LoginApp\\Controllers\\KelasController.cs",
-              "RelativeToolTip": "LoginApp\\Controllers\\KelasController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAAB0AAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T15:22:08.929Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "HariController.cs",
-              "DocumentMoniker": "C:\\Users\\Ellie\\source\\repos\\Skripsi-AsistenDosen\\LoginApp\\Controllers\\HariController.cs",
-              "RelativeDocumentMoniker": "LoginApp\\Controllers\\HariController.cs",
-              "ToolTip": "C:\\Users\\Ellie\\source\\repos\\Skripsi-AsistenDosen\\LoginApp\\Controllers\\HariController.cs",
-              "RelativeToolTip": "LoginApp\\Controllers\\HariController.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAAABwAAAAcAAAAAAAAAA==",
+              "Title": "AsistenDosen.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Ellie\\source\\repos\\Skripsi-AsistenDosen\\LoginApp.Maui\\ViewsKoordinator\\AsistenDosen.xaml.cs",
+              "RelativeDocumentMoniker": "LoginApp.Maui\\ViewsKoordinator\\AsistenDosen.xaml.cs",
+              "ToolTip": "C:\\Users\\Ellie\\source\\repos\\Skripsi-AsistenDosen\\LoginApp.Maui\\ViewsKoordinator\\AsistenDosen.xaml.cs",
+              "RelativeToolTip": "LoginApp.Maui\\ViewsKoordinator\\AsistenDosen.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T15:22:05.479Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MataKuliahController.cs",
-              "DocumentMoniker": "C:\\Users\\Ellie\\source\\repos\\Skripsi-AsistenDosen\\LoginApp\\Controllers\\MataKuliahController.cs",
-              "RelativeDocumentMoniker": "LoginApp\\Controllers\\MataKuliahController.cs",
-              "ToolTip": "C:\\Users\\Ellie\\source\\repos\\Skripsi-AsistenDosen\\LoginApp\\Controllers\\MataKuliahController.cs",
-              "RelativeToolTip": "LoginApp\\Controllers\\MataKuliahController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T15:21:31.838Z",
+              "WhenOpened": "2025-09-25T15:41:32.549Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MahasiswaController.cs",
-              "DocumentMoniker": "C:\\Users\\Ellie\\source\\repos\\Skripsi-AsistenDosen\\LoginApp\\Controllers\\MahasiswaController.cs",
-              "RelativeDocumentMoniker": "LoginApp\\Controllers\\MahasiswaController.cs",
-              "ToolTip": "C:\\Users\\Ellie\\source\\repos\\Skripsi-AsistenDosen\\LoginApp\\Controllers\\MahasiswaController.cs",
-              "RelativeToolTip": "LoginApp\\Controllers\\MahasiswaController.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "IJadwalService.cs",
+              "DocumentMoniker": "C:\\Users\\Ellie\\source\\repos\\Skripsi-AsistenDosen\\LoginApp.Maui\\Services\\IJadwalService.cs",
+              "RelativeDocumentMoniker": "LoginApp.Maui\\Services\\IJadwalService.cs",
+              "ToolTip": "C:\\Users\\Ellie\\source\\repos\\Skripsi-AsistenDosen\\LoginApp.Maui\\Services\\IJadwalService.cs",
+              "RelativeToolTip": "LoginApp.Maui\\Services\\IJadwalService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T15:21:37.977Z",
+              "WhenOpened": "2025-09-25T15:40:35.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "JadwalService.cs",
+              "DocumentMoniker": "C:\\Users\\Ellie\\source\\repos\\Skripsi-AsistenDosen\\LoginApp.Maui\\Services\\JadwalService.cs",
+              "RelativeDocumentMoniker": "LoginApp.Maui\\Services\\JadwalService.cs",
+              "ToolTip": "C:\\Users\\Ellie\\source\\repos\\Skripsi-AsistenDosen\\LoginApp.Maui\\Services\\JadwalService.cs",
+              "RelativeToolTip": "LoginApp.Maui\\Services\\JadwalService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T15:36:34.084Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "InputJadwalViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Ellie\\source\\repos\\Skripsi-AsistenDosen\\LoginApp.Maui\\ViewModels\\InputJadwalViewModel.cs",
+              "RelativeDocumentMoniker": "LoginApp.Maui\\ViewModels\\InputJadwalViewModel.cs",
+              "ToolTip": "C:\\Users\\Ellie\\source\\repos\\Skripsi-AsistenDosen\\LoginApp.Maui\\ViewModels\\InputJadwalViewModel.cs",
+              "RelativeToolTip": "LoginApp.Maui\\ViewModels\\InputJadwalViewModel.cs",
+              "ViewState": "AgIAAJ4AAAAAAAAAAAAAALgAAABlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T15:29:23.738Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "JadwalController.cs",
               "DocumentMoniker": "C:\\Users\\Ellie\\source\\repos\\Skripsi-AsistenDosen\\LoginApp\\Controllers\\JadwalController.cs",
               "RelativeDocumentMoniker": "LoginApp\\Controllers\\JadwalController.cs",
               "ToolTip": "C:\\Users\\Ellie\\source\\repos\\Skripsi-AsistenDosen\\LoginApp\\Controllers\\JadwalController.cs",
               "RelativeToolTip": "LoginApp\\Controllers\\JadwalController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwCoAAABdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T15:22:38.396Z",
+              "WhenOpened": "2025-09-25T15:28:55.996Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "TahunAkademikController.cs",
-              "DocumentMoniker": "C:\\Users\\Ellie\\source\\repos\\Skripsi-AsistenDosen\\LoginApp\\Controllers\\TahunAkademikController.cs",
-              "RelativeDocumentMoniker": "LoginApp\\Controllers\\TahunAkademikController.cs",
-              "ToolTip": "C:\\Users\\Ellie\\source\\repos\\Skripsi-AsistenDosen\\LoginApp\\Controllers\\TahunAkademikController.cs",
-              "RelativeToolTip": "LoginApp\\Controllers\\TahunAkademikController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T15:21:41.296Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 5,
               "Title": "InputJadwal.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Ellie\\source\\repos\\Skripsi-AsistenDosen\\LoginApp.Maui\\ViewsAkademik\\InputJadwal.xaml.cs",
               "RelativeDocumentMoniker": "LoginApp.Maui\\ViewsAkademik\\InputJadwal.xaml.cs",
               "ToolTip": "C:\\Users\\Ellie\\source\\repos\\Skripsi-AsistenDosen\\LoginApp.Maui\\ViewsAkademik\\InputJadwal.xaml.cs",
               "RelativeToolTip": "LoginApp.Maui\\ViewsAkademik\\InputJadwal.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAABXAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-25T15:15:08.207Z",
               "EditorCaption": ""

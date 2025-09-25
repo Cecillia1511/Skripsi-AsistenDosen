@@ -12,6 +12,6 @@ public interface IJadwalService
     Task<List<JadwalOption>> GetRuanganAsync();
     Task<List<JadwalOption>> GetKelasAsync();
     Task<List<JadwalTampil>> GetJadwalByTahunAsync(int tahunId);
-    Task<bool> SimpanJadwalAsync(JadwalInputModel jadwal);
+    Task<(bool Success, string Message)> SimpanJadwalAsync(JadwalInputModel jadwal);
 }
 

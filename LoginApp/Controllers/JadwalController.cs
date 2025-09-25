@@ -18,13 +18,13 @@ namespace LoginApp.API.Controllers
 
         public class JadwalRequest
         {
-            public string Kode_MK { get; set; }              
-            public string TahunAkademik_ID { get; set; }     
-            public string NIP { get; set; }                  
-            public string Hari_ID { get; set; }              
-            public string Waktu_ID { get; set; }            
-            public string Ruangan_ID { get; set; }          
-            public string Kelas_ID { get; set; }            
+            public string KodeMK { get; set; }
+            public string TahunAkademik { get; set; }
+            public string Dosen { get; set; }
+            public string Hari { get; set; }
+            public string Waktu { get; set; }
+            public string Ruangan { get; set; }
+            public string Kelas { get; set; }
         }
 
 
@@ -45,13 +45,13 @@ namespace LoginApp.API.Controllers
             INSERT INTO Jadwal (Kode_MK, TahunAkademik_ID, NIP, Hari_ID, Waktu_ID, Ruangan_ID, Kelas_ID)
             VALUES (@Kode_MK, @TahunAkademik_ID, @NIP, @Hari_ID, @Waktu_ID, @Ruangan_ID, @Kelas_ID)", con);
 
-            cmd.Parameters.AddWithValue("@Kode_MK", request.Kode_MK);
-            cmd.Parameters.AddWithValue("@TahunAkademik_ID", request.TahunAkademik_ID);
-            cmd.Parameters.AddWithValue("@NIP", request.NIP);
-            cmd.Parameters.AddWithValue("@Hari_ID", request.Hari_ID);
-            cmd.Parameters.AddWithValue("@Waktu_ID", request.Waktu_ID);
-            cmd.Parameters.AddWithValue("@Ruangan_ID", request.Ruangan_ID);
-            cmd.Parameters.AddWithValue("@Kelas_ID", request.Kelas_ID);
+            cmd.Parameters.AddWithValue("@Kode_MK", request.KodeMK);
+            cmd.Parameters.AddWithValue("@TahunAkademik_ID", request.TahunAkademik);
+            cmd.Parameters.AddWithValue("@NIP", request.Dosen);
+            cmd.Parameters.AddWithValue("@Hari_ID", request.Hari);
+            cmd.Parameters.AddWithValue("@Waktu_ID", request.Waktu);
+            cmd.Parameters.AddWithValue("@Ruangan_ID", request.Ruangan);
+            cmd.Parameters.AddWithValue("@Kelas_ID", request.Kelas);
 
 
             try
