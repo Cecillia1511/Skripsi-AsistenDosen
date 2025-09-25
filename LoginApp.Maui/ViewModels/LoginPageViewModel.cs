@@ -102,6 +102,7 @@ public partial class LoginPageViewModel : ObservableObject
 
     private async void NavigateByRole(string role)
     {
+        System.Diagnostics.Debug.WriteLine($"[DEBUG] Role from server: '{role}'");
         switch (role.ToLower())
         {
             case "koordinator":
