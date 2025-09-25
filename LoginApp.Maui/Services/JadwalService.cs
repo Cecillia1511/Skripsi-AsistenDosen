@@ -25,7 +25,7 @@ public class JadwalService : IJadwalService
 
         _client = new HttpClient(handler)
         {
-            BaseAddress = new Uri(baseUrl)
+            BaseAddress = new Uri(baseUrl.EndsWith("/") ? baseUrl : baseUrl + "/")
         };
 
         _jsonOptions = new JsonSerializerOptions

@@ -595,3 +595,4 @@ C:\Users\Ellie\source\repos\Skripsi-AsistenDosen\LoginApp\obj\Debug\net9.0\refin
 C:\Users\Ellie\source\repos\Skripsi-AsistenDosen\LoginApp\obj\Debug\net9.0\LoginApp.Api.pdb
 C:\Users\Ellie\source\repos\Skripsi-AsistenDosen\LoginApp\obj\Debug\net9.0\LoginApp.Api.genruntimeconfig.cache
 C:\Users\Ellie\source\repos\Skripsi-AsistenDosen\LoginApp\obj\Debug\net9.0\ref\LoginApp.Api.dll
+C:\Users\Ellie\source\repos\Skripsi-AsistenDosen\LoginApp\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
