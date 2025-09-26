@@ -114,6 +114,7 @@ public partial class InputJadwalViewModel : ObservableObject
         try
         {
             _allMataKuliah = await _service.GetMataKuliahAsync();
+            Console.WriteLine($"MataKuliah Count: {_allMataKuliah.Count}");
             FilteredMataKuliahList = new ObservableCollection<JadwalOption>(_allMataKuliah);
 
             _allTahunAkademik = await _service.GetTahunAkademikAsync();

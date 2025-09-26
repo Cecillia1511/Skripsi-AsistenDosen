@@ -7,27 +7,22 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// 🌐 Dengarkan semua IP di port 44356
-builder.WebHost.UseUrls("https://0.0.0.0:44356");
+// (Dev) kalau ingin bind ke URL khusus, pakai localhost agar sertifikat dev cocok
+//builder.WebHost.UseUrls("https://localhost:44356");
 
-// 📦 Tambahkan controller dan DB context
+// Services
 builder.Services.AddControllers();
 builder.Services.AddDbContext<AppDbContext>(options =>
-{
     options.UseSqlServer(builder.Configuration.GetConnectionString("AsistenDosen")
-        ?? throw new InvalidOperationException("Connection 'AsistenDosen' is not found"));
-});
+        ?? throw new InvalidOperationException("Connection 'AsistenDosen' is not found")));
 
-// 🧪 Swagger untuk testing API
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<JwtHelper>();
 
 var jwtSettings = builder.Configuration.GetSection("Jwt");
-var secretKey = jwtSettings["Key"];
-if (string.IsNullOrEmpty(secretKey))
-    throw new InvalidOperationException("JWT secret key is missing in configuration");
+var secretKey = jwtSettings["Key"] ?? throw new InvalidOperationException("JWT secret key is missing in configuration");
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
@@ -44,41 +39,36 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         };
     });
 
+// CORS (development: AllowAll)
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", p => p.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());
+});
+
 var app = builder.Build();
 
-// 🛠️ Print startup info
-Console.WriteLine("🚀 LoginApp API is starting...");
-Console.WriteLine($"🌐 Environment: {app.Environment.EnvironmentName}");
-Console.WriteLine($"🔑 JWT Issuer: {jwtSettings["Issuer"]}");
-Console.WriteLine($"🔑 JWT Audience: {jwtSettings["Audience"]}");
-Console.WriteLine($"📡 Listening on: https://0.0.0.0:44356");
-
-// 🛠️ Konfigurasi pipeline
+// Dev-only middleware
 if (app.Environment.IsDevelopment())
 {
     app.UseDeveloperExceptionPage();
     app.UseSwagger();
     app.UseSwaggerUI();
-    app.MapOpenApi(); // opsional, kalau pakai NSwag
 }
 
-// 🔐 Redirect HTTP ke HTTPS
+// Pipeline order
 app.UseHttpsRedirection();
 
-// 📡 Override Host agar cocok dengan IP lokal
-app.Use(async (context, next) =>
-{
-    Console.WriteLine($"➡️ Request: {context.Request.Method} {context.Request.Path}");
-    context.Request.Host = new HostString("192.168.1.8:44356");
-    await next();
-});
+app.UseRouting();
 
-// 🔐 Authorization (kalau pakai [Authorize] nanti)
+app.UseCors("AllowAll");
+
 app.UseAuthentication();
 app.UseAuthorization();
 
-// 🚀 Aktifkan semua controller
 app.MapControllers();
 
-// 🏁 Jalankan aplikasi
+Console.WriteLine("🚀 LoginApp API is starting...");
+Console.WriteLine($"🌐 Environment: {app.Environment.EnvironmentName}");
+Console.WriteLine($"📡 Listening on: https://localhost:44356");
+
 app.Run();

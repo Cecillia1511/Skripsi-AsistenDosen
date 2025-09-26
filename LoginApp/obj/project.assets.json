@@ -13352,23 +13352,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Ellie\\.nuget\\packages\\": {},
+    "C:\\Users\\LENOVO IP3\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ellie\\source\\repos\\Skripsi-AsistenDosen\\LoginApp\\LoginApp.Api.csproj",
+      "projectUniqueName": "C:\\Users\\LENOVO IP3\\Source\\Repos\\Skripsi-AsistenDosen\\LoginApp\\LoginApp.Api.csproj",
       "projectName": "LoginApp.Api",
-      "projectPath": "C:\\Users\\Ellie\\source\\repos\\Skripsi-AsistenDosen\\LoginApp\\LoginApp.Api.csproj",
-      "packagesPath": "C:\\Users\\Ellie\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ellie\\source\\repos\\Skripsi-AsistenDosen\\LoginApp\\obj\\",
+      "projectPath": "C:\\Users\\LENOVO IP3\\Source\\Repos\\Skripsi-AsistenDosen\\LoginApp\\LoginApp.Api.csproj",
+      "packagesPath": "C:\\Users\\LENOVO IP3\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\LENOVO IP3\\Source\\Repos\\Skripsi-AsistenDosen\\LoginApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Ellie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\LENOVO IP3\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
