@@ -16,6 +16,26 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "DosenController",
+    "Method": "GetDropdown",
+    "RelativePath": "api/Dosen/dropdown",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HariController",
+    "Method": "GetDropdown",
+    "RelativePath": "api/Hari/dropdown",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "LoginApp.API.Controllers.JadwalController",
     "Method": "GetAllJadwal",
     "RelativePath": "api/Jadwal/All",
@@ -39,6 +59,32 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LoginApp.API.Controllers.JadwalController",
+    "Method": "GetByTahun",
+    "RelativePath": "api/Jadwal/tahun/{tahunId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tahunId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LoginApp.API.Controllers.KelasController",
+    "Method": "GetDropdown",
+    "RelativePath": "api/Kelas/dropdown",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
@@ -71,6 +117,36 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LoginApp.API.Controllers.MataKuliahController",
+    "Method": "GetDropdown",
+    "RelativePath": "api/MataKuliah/dropdown",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LoginApp.API.Controllers.RuanganController",
+    "Method": "GetDropdown",
+    "RelativePath": "api/Ruangan/dropdown",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TahunAkademikController",
+    "Method": "GetDropdown",
+    "RelativePath": "api/TahunAkademik/dropdown",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
@@ -133,6 +209,16 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LoginApp.API.Controllers.WaktuController",
+    "Method": "GetDropdown",
+    "RelativePath": "api/Waktu/dropdown",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {

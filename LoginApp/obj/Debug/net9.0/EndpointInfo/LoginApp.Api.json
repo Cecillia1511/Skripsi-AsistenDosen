@@ -36,6 +36,30 @@
         }
       }
     },
+    "/api/Dosen/dropdown": {
+      "get": {
+        "tags": [
+          "Dosen"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Hari/dropdown": {
+      "get": {
+        "tags": [
+          "Hari"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Jadwal/Input": {
       "post": {
         "tags": [
@@ -71,6 +95,41 @@
       "get": {
         "tags": [
           "Jadwal"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Jadwal/tahun/{tahunId}": {
+      "get": {
+        "tags": [
+          "Jadwal"
+        ],
+        "parameters": [
+          {
+            "name": "tahunId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Kelas/dropdown": {
+      "get": {
+        "tags": [
+          "Kelas"
         ],
         "responses": {
           "200": {
@@ -134,6 +193,42 @@
             }
           }
         },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/MataKuliah/dropdown": {
+      "get": {
+        "tags": [
+          "MataKuliah"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Ruangan/dropdown": {
+      "get": {
+        "tags": [
+          "Ruangan"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/TahunAkademik/dropdown": {
+      "get": {
+        "tags": [
+          "TahunAkademik"
+        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -253,6 +348,18 @@
         }
       }
     },
+    "/api/Waktu/dropdown": {
+      "get": {
+        "tags": [
+          "Waktu"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/WeatherForecast": {
       "get": {
         "tags": [
@@ -298,31 +405,31 @@
       "JadwalRequest": {
         "type": "object",
         "properties": {
-          "kode_MK": {
+          "kodeMK": {
             "type": "string",
             "nullable": true
           },
-          "tahunAkademik_ID": {
+          "tahunAkademik": {
             "type": "string",
             "nullable": true
           },
-          "nip": {
+          "dosen": {
             "type": "string",
             "nullable": true
           },
-          "hari_ID": {
+          "hari": {
             "type": "string",
             "nullable": true
           },
-          "waktu_ID": {
+          "waktu": {
             "type": "string",
             "nullable": true
           },
-          "ruangan_ID": {
+          "ruangan": {
             "type": "string",
             "nullable": true
           },
-          "kelas_ID": {
+          "kelas": {
             "type": "string",
             "nullable": true
           }

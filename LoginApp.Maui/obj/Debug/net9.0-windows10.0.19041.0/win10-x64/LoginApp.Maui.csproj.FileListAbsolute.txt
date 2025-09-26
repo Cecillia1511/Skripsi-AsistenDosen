@@ -1157,3 +1157,4 @@ C:\Users\Ellie\source\repos\Skripsi-AsistenDosen\LoginApp.Maui\obj\Debug\net9.0-
 C:\Users\Ellie\source\repos\Skripsi-AsistenDosen\LoginApp.Maui\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\qualifiers.txt
 C:\Users\Ellie\source\repos\Skripsi-AsistenDosen\LoginApp.Maui\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 C:\Users\Ellie\source\repos\Skripsi-AsistenDosen\LoginApp.Maui\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
+C:\Users\Ellie\source\repos\Skripsi-AsistenDosen\LoginApp.Maui\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\appsettings.json

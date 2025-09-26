@@ -13,7 +13,7 @@ namespace LoginApp.Maui
         public AppShell()
         {
             InitializeComponent();
-            BindingContext = new AppShellViewModel(); // ✅ add this line
+            BindingContext = new AppShellViewModel();
         }
         public static async Task DisplaySnackbarAsync(string message)
         {

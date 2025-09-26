@@ -25,7 +25,7 @@ public class JadwalService : IJadwalService
 
         _client = new HttpClient(handler)
         {
-            BaseAddress = new Uri(baseUrl)
+            BaseAddress = new Uri(baseUrl.EndsWith("/") ? baseUrl : baseUrl + "/")
         };
 
         _jsonOptions = new JsonSerializerOptions
@@ -90,11 +90,17 @@ public class JadwalService : IJadwalService
         return JsonSerializer.Deserialize<List<JadwalTampil>>(raw, _jsonOptions) ?? new();
     }
 
-    public async Task<bool> SimpanJadwalAsync(JadwalInputModel jadwal)
+    public async Task<(bool Success, string Message)> SimpanJadwalAsync(JadwalInputModel jadwal)
     {
         Console.WriteLine("Sending Jadwal: " + JsonSerializer.Serialize(jadwal));
+
         var response = await _client.PostAsJsonAsync("Jadwal/Input", jadwal);
+
+        var content = await response.Content.ReadAsStringAsync();
         Console.WriteLine("Status Code: " + response.StatusCode);
-        return response.IsSuccessStatusCode;
+        Console.WriteLine("Response Body: " + content);
+
+        return (response.IsSuccessStatusCode, content);
     }
+
 }
