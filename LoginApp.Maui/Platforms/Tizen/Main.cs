@@ -2,16 +2,14 @@ using Microsoft.Maui;
 using Microsoft.Maui.Hosting;
 using System;
 
-namespace LoginApp.Maui
+namespace LoginApp.Maui.Platforms.Windows
 {
-    internal class Program : MauiApplication
+    internal static class Program
     {
-        protected override MauiApp CreateMauiApp() => MauiProgram.CreateMauiApp();
-
+        [STAThread]
         static void Main(string[] args)
         {
-            var app = new Program();
-            app.Run(args);
+            MauiWinUIApplication.Start<App>(args);
         }
     }
 }

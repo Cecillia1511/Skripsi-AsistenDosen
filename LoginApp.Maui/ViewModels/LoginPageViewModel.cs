@@ -8,6 +8,8 @@ using LoginApp.Maui.ViewsAkademik;
 using LoginApp.Maui.ViewsKaprodi;
 using Newtonsoft.Json;
 using System.Net.Http.Json;
+using Microsoft.Maui.Controls;
+using Microsoft.Maui.Networking;
 
 namespace LoginApp.Maui.ViewModels;
 
@@ -67,12 +69,54 @@ public partial class LoginPageViewModel : ObservableObject
     {
         try
         {
-            System.Diagnostics.Debug.WriteLine("Command berhasil dipanggil");
+            System.Diagnostics.Debug.WriteLine("Command SignInMahasiswa dipanggil");
             await Shell.Current.GoToAsync("//LoginMahasiswa");
         }
         catch (Exception ex)
         {
+            System.Diagnostics.Debug.WriteLine($"[SIGN IN MAHASISWA] Route Error: {ex.Message}");
             await ShowAlert("Navigation Error", $"Failed to navigate:\n{ex.Message}");
+        }
+    }
+
+    [RelayCommand]
+    public async Task SignUpAsync()
+    {
+        try
+        {
+            System.Diagnostics.Debug.WriteLine("[SIGN UP] Navigasi ke RegisterMahasiswa dimulai – coba Shell Route");
+
+            // Coba Shell Route dulu
+            await Shell.Current.GoToAsync("//RegisterMahasiswa");
+
+            ClearCredentials();
+            System.Diagnostics.Debug.WriteLine("[SIGN UP] Shell Route berhasil");
+        }
+        catch (Exception ex)
+        {
+            System.Diagnostics.Debug.WriteLine($"[SIGN UP] Shell Route Error: {ex.Message} – Fallback ke PushAsync");
+
+            // FALLBACK: PushAsync dengan check Navigation available
+            try
+            {
+                if (Application.Current.MainPage.Navigation == null)
+                {
+                    System.Diagnostics.Debug.WriteLine("[SIGN UP] Navigation null – wrap MainPage dengan NavigationPage");
+                    // Quick fix: Wrap manual (tapi ini one-time, better setup di App.xaml.cs)
+                    Application.Current.MainPage = new NavigationPage(Application.Current.MainPage);
+                }
+
+                var registerPage = new RegisterMahasiswa();
+                await Application.Current.MainPage.Navigation.PushAsync(registerPage);
+
+                ClearCredentials();
+                System.Diagnostics.Debug.WriteLine("[SIGN UP] Fallback PushAsync berhasil – sekarang di RegisterMahasiswa");
+            }
+            catch (Exception innerEx)  // FIX: Name inner exception (bukan anonymous)
+            {
+                System.Diagnostics.Debug.WriteLine($"[SIGN UP] Fallback PushAsync Error: {innerEx.Message}");
+                await ShowAlert("Navigation Error", $"Gagal pindah ke Register: {innerEx.Message}. Cek setup app.");
+            }
         }
     }
 
@@ -81,7 +125,6 @@ public partial class LoginPageViewModel : ObservableObject
         Username = string.Empty;
         Password = string.Empty;
     }
-
 
     private bool IsNetworkAvailable() =>
         Connectivity.Current.NetworkAccess == NetworkAccess.Internet;

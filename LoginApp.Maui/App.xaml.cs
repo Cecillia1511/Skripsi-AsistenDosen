@@ -1,15 +1,12 @@
 ﻿using LoginApp.Maui.Models;
-using LoginApp.Maui.ViewsMahasiswa;
 using Microsoft.Extensions.Configuration;
-using System.Data;
-using System.Diagnostics;
-using System.Security.Cryptography.X509Certificates;
+using System.Diagnostics; 
 
-namespace LoginApp.Maui
+namespace LoginApp.Maui 
 {
-    public partial class App : Application
+    public partial class App : Application 
     {
-        public static User user;
+        public static User user; 
         public static IConfiguration Configuration { get; private set; }
 
         public App()
@@ -27,7 +24,7 @@ namespace LoginApp.Maui
             }
             catch (Exception ex)
             {
-                Debug.WriteLine(ex); // or Debug.WriteLine
+                Debug.WriteLine($"App init error: {ex}");
                 throw;
             }
         }

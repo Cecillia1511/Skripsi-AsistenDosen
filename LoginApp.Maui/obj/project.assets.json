@@ -39174,11 +39174,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\LENOVO IP3\\Source\\Repos\\Skripsi-AsistenDosen\\LoginApp.Maui\\LoginApp.Maui.csproj",
+      "projectUniqueName": "C:\\AsistenDosen\\LoginApp.Maui\\LoginApp.Maui.csproj",
       "projectName": "LoginApp.Maui",
-      "projectPath": "C:\\Users\\LENOVO IP3\\Source\\Repos\\Skripsi-AsistenDosen\\LoginApp.Maui\\LoginApp.Maui.csproj",
+      "projectPath": "C:\\AsistenDosen\\LoginApp.Maui\\LoginApp.Maui.csproj",
       "packagesPath": "C:\\Users\\LENOVO IP3\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\LENOVO IP3\\Source\\Repos\\Skripsi-AsistenDosen\\LoginApp.Maui\\obj\\",
+      "outputPath": "C:\\AsistenDosen\\LoginApp.Maui\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [

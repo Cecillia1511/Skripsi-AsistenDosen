@@ -9,32 +9,35 @@ namespace LoginApp.Maui.ViewsAkademik;
 
 public partial class HomePageAkademik : ContentPage
 {
+    // Shortcut ke ViewModel yang sudah di-bind
     private HomePageAkademikViewModel Vm => BindingContext as HomePageAkademikViewModel;
 
     public HomePageAkademik()
     {
         InitializeComponent();
 
-        // Inject services ke ViewModel
+        // Inject service ke ViewModel dan set sebagai BindingContext
         BindingContext = new HomePageAkademikViewModel(
             new JadwalService(App.Configuration),
             new TahunAkademikService(App.Configuration)
         );
     }
 
+    // Load data saat halaman muncul
     protected override async void OnAppearing()
     {
         base.OnAppearing();
 
-        if (Vm is not null)
+        if (Vm != null)
         {
             await Vm.InitializeAsync();
         }
     }
 
+    // Event handler saat tahun akademik dipilih dari dropdown
     private async void OnTahunSelected(object sender, SelectionChangedEventArgs e)
     {
-        if (Vm is null) return;
+        if (Vm == null) return;
 
         if (e.CurrentSelection.FirstOrDefault() is JadwalOption selected)
         {

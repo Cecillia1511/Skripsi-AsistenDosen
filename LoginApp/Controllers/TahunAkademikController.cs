@@ -14,7 +14,7 @@ public class TahunAkademikController : ControllerBase
     {
         var result = new List<object>();
         using var con = new SqlConnection(_config.GetConnectionString("AsistenDosen"));
-        using var cmd = new SqlCommand("SELECT TahunAkademik_ID, Tahun FROM TahunAkademik", con);
+        using var cmd = new SqlCommand("SELECT TahunAkademik_ID, Tahun, Semester FROM TahunAkademik", con);
 
         try
         {
@@ -25,7 +25,7 @@ public class TahunAkademikController : ControllerBase
                 result.Add(new
                 {
                     Id = reader["TahunAkademik_ID"].ToString(),
-                    Label = reader["Tahun"].ToString()
+                    Label = $" {reader["Semester"]} - {reader["Tahun"]}"
                 });
             }
             return Ok(result);

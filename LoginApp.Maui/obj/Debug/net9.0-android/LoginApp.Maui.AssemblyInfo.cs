@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LoginApp.Maui")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+3233aa66f95b10f009480c9e208198e4e363b48b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+640d34ee0ccf944c0241a282217d61008c5047f7")]
 [assembly: System.Reflection.AssemblyProductAttribute("LoginApp.Maui")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LoginApp.Maui")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

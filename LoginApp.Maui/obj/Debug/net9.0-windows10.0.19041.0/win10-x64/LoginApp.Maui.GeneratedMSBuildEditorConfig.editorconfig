@@ -15,7 +15,7 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = LoginApp.Maui
-build_property.ProjectDir = C:\Users\LENOVO IP3\Source\Repos\Skripsi-AsistenDosen\LoginApp.Maui\
+build_property.ProjectDir = C:\AsistenDosen\LoginApp.Maui\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.CsWinRTAotExportsEnabled = 
@@ -27,253 +27,253 @@ build_property.CsWinRTUseWindowsUIXamlProjections = false
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/LENOVO IP3/Source/Repos/Skripsi-AsistenDosen/LoginApp.Maui/App.xaml]
+[C:/AsistenDosen/LoginApp.Maui/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LoginApp.Maui.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/Users/LENOVO IP3/Source/Repos/Skripsi-AsistenDosen/LoginApp.Maui/AppShell.xaml]
+[C:/AsistenDosen/LoginApp.Maui/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LoginApp.Maui.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/Users/LENOVO IP3/Source/Repos/Skripsi-AsistenDosen/LoginApp.Maui/AppShellAkademik.xaml]
+[C:/AsistenDosen/LoginApp.Maui/AppShellAkademik.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LoginApp.Maui.AppShellAkademik.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShellAkademik.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShellAkademik.xaml
 
-[C:/Users/LENOVO IP3/Source/Repos/Skripsi-AsistenDosen/LoginApp.Maui/AppShellAsistenDosen.xaml]
+[C:/AsistenDosen/LoginApp.Maui/AppShellAsistenDosen.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LoginApp.Maui.AppShellAsistenDosen.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShellAsistenDosen.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShellAsistenDosen.xaml
 
-[C:/Users/LENOVO IP3/Source/Repos/Skripsi-AsistenDosen/LoginApp.Maui/AppShellKaprodi.xaml]
+[C:/AsistenDosen/LoginApp.Maui/AppShellKaprodi.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LoginApp.Maui.AppShellKaprodi.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShellKaprodi.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShellKaprodi.xaml
 
-[C:/Users/LENOVO IP3/Source/Repos/Skripsi-AsistenDosen/LoginApp.Maui/AppShellKoordinator.xaml]
+[C:/AsistenDosen/LoginApp.Maui/AppShellKoordinator.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LoginApp.Maui.AppShellKoordinator.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShellKoordinator.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShellKoordinator.xaml
 
-[C:/Users/LENOVO IP3/Source/Repos/Skripsi-AsistenDosen/LoginApp.Maui/AppShellMahasiswa.xaml]
+[C:/AsistenDosen/LoginApp.Maui/AppShellMahasiswa.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LoginApp.Maui.AppShellMahasiswa.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShellMahasiswa.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShellMahasiswa.xaml
 
-[C:/Users/LENOVO IP3/Source/Repos/Skripsi-AsistenDosen/LoginApp.Maui/GoogleLoginPage.xaml]
+[C:/AsistenDosen/LoginApp.Maui/GoogleLoginPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LoginApp.Maui.GoogleLoginPage.xaml
 build_metadata.AdditionalFiles.TargetPath = GoogleLoginPage.xaml
 build_metadata.AdditionalFiles.RelativePath = GoogleLoginPage.xaml
 
-[C:/Users/LENOVO IP3/Source/Repos/Skripsi-AsistenDosen/LoginApp.Maui/LoginMahasiswa.xaml]
+[C:/AsistenDosen/LoginApp.Maui/LoginMahasiswa.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LoginApp.Maui.LoginMahasiswa.xaml
 build_metadata.AdditionalFiles.TargetPath = LoginMahasiswa.xaml
 build_metadata.AdditionalFiles.RelativePath = LoginMahasiswa.xaml
 
-[C:/Users/LENOVO IP3/Source/Repos/Skripsi-AsistenDosen/LoginApp.Maui/LoginPage.xaml]
+[C:/AsistenDosen/LoginApp.Maui/LoginPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LoginApp.Maui.LoginPage.xaml
 build_metadata.AdditionalFiles.TargetPath = LoginPage.xaml
 build_metadata.AdditionalFiles.RelativePath = LoginPage.xaml
 
-[C:/Users/LENOVO IP3/Source/Repos/Skripsi-AsistenDosen/LoginApp.Maui/Pages/Controls/AddButton.xaml]
+[C:/AsistenDosen/LoginApp.Maui/Pages/Controls/AddButton.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LoginApp.Maui.Pages.Controls.AddButton.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\Controls\AddButton.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\Controls\AddButton.xaml
 
-[C:/Users/LENOVO IP3/Source/Repos/Skripsi-AsistenDosen/LoginApp.Maui/Pages/Controls/CategoryChart.xaml]
+[C:/AsistenDosen/LoginApp.Maui/Pages/Controls/CategoryChart.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LoginApp.Maui.Pages.Controls.CategoryChart.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\Controls\CategoryChart.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\Controls\CategoryChart.xaml
 
-[C:/Users/LENOVO IP3/Source/Repos/Skripsi-AsistenDosen/LoginApp.Maui/Pages/Controls/ProjectCardView.xaml]
+[C:/AsistenDosen/LoginApp.Maui/Pages/Controls/ProjectCardView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LoginApp.Maui.Pages.Controls.ProjectCardView.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\Controls\ProjectCardView.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\Controls\ProjectCardView.xaml
 
-[C:/Users/LENOVO IP3/Source/Repos/Skripsi-AsistenDosen/LoginApp.Maui/Pages/Controls/TagView.xaml]
+[C:/AsistenDosen/LoginApp.Maui/Pages/Controls/TagView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LoginApp.Maui.Pages.Controls.TagView.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\Controls\TagView.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\Controls\TagView.xaml
 
-[C:/Users/LENOVO IP3/Source/Repos/Skripsi-AsistenDosen/LoginApp.Maui/Pages/Controls/TaskView.xaml]
+[C:/AsistenDosen/LoginApp.Maui/Pages/Controls/TaskView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LoginApp.Maui.Pages.Controls.TaskView.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\Controls\TaskView.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\Controls\TaskView.xaml
 
-[C:/Users/LENOVO IP3/Source/Repos/Skripsi-AsistenDosen/LoginApp.Maui/Pages/MainPage.xaml]
+[C:/AsistenDosen/LoginApp.Maui/Pages/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LoginApp.Maui.Pages.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\MainPage.xaml
 
-[C:/Users/LENOVO IP3/Source/Repos/Skripsi-AsistenDosen/LoginApp.Maui/Pages/ManageMetaPage.xaml]
+[C:/AsistenDosen/LoginApp.Maui/Pages/ManageMetaPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LoginApp.Maui.Pages.ManageMetaPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\ManageMetaPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\ManageMetaPage.xaml
 
-[C:/Users/LENOVO IP3/Source/Repos/Skripsi-AsistenDosen/LoginApp.Maui/Pages/ProjectDetailPage.xaml]
+[C:/AsistenDosen/LoginApp.Maui/Pages/ProjectDetailPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LoginApp.Maui.Pages.ProjectDetailPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\ProjectDetailPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\ProjectDetailPage.xaml
 
-[C:/Users/LENOVO IP3/Source/Repos/Skripsi-AsistenDosen/LoginApp.Maui/Pages/ProjectListPage.xaml]
+[C:/AsistenDosen/LoginApp.Maui/Pages/ProjectListPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LoginApp.Maui.Pages.ProjectListPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\ProjectListPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\ProjectListPage.xaml
 
-[C:/Users/LENOVO IP3/Source/Repos/Skripsi-AsistenDosen/LoginApp.Maui/Pages/TaskDetailPage.xaml]
+[C:/AsistenDosen/LoginApp.Maui/Pages/TaskDetailPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LoginApp.Maui.Pages.TaskDetailPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\TaskDetailPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\TaskDetailPage.xaml
 
-[C:/Users/LENOVO IP3/Source/Repos/Skripsi-AsistenDosen/LoginApp.Maui/RegistrasiPage.xaml]
+[C:/AsistenDosen/LoginApp.Maui/RegistrasiPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LoginApp.Maui.RegistrasiPage.xaml
 build_metadata.AdditionalFiles.TargetPath = RegistrasiPage.xaml
 build_metadata.AdditionalFiles.RelativePath = RegistrasiPage.xaml
 
-[C:/Users/LENOVO IP3/Source/Repos/Skripsi-AsistenDosen/LoginApp.Maui/Resources/Styles/AppStyles.xaml]
+[C:/AsistenDosen/LoginApp.Maui/Resources/Styles/AppStyles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LoginApp.Maui.Resources.Styles.AppStyles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\AppStyles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\AppStyles.xaml
 
-[C:/Users/LENOVO IP3/Source/Repos/Skripsi-AsistenDosen/LoginApp.Maui/Resources/Styles/Colors.xaml]
+[C:/AsistenDosen/LoginApp.Maui/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LoginApp.Maui.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[C:/Users/LENOVO IP3/Source/Repos/Skripsi-AsistenDosen/LoginApp.Maui/Resources/Styles/Styles.xaml]
+[C:/AsistenDosen/LoginApp.Maui/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LoginApp.Maui.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
-[C:/Users/LENOVO IP3/Source/Repos/Skripsi-AsistenDosen/LoginApp.Maui/UserControls/FlyoutHeaderControl.xaml]
+[C:/AsistenDosen/LoginApp.Maui/UserControls/FlyoutHeaderControl.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LoginApp.Maui.UserControls.FlyoutHeaderControl.xaml
 build_metadata.AdditionalFiles.TargetPath = UserControls\FlyoutHeaderControl.xaml
 build_metadata.AdditionalFiles.RelativePath = UserControls\FlyoutHeaderControl.xaml
 
-[C:/Users/LENOVO IP3/Source/Repos/Skripsi-AsistenDosen/LoginApp.Maui/ViewsAkademik/HomePageAkademik.xaml]
+[C:/AsistenDosen/LoginApp.Maui/ViewsAkademik/HomePageAkademik.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LoginApp.Maui.ViewsAkademik.HomePageAkademik.xaml
 build_metadata.AdditionalFiles.TargetPath = ViewsAkademik\HomePageAkademik.xaml
 build_metadata.AdditionalFiles.RelativePath = ViewsAkademik\HomePageAkademik.xaml
 
-[C:/Users/LENOVO IP3/Source/Repos/Skripsi-AsistenDosen/LoginApp.Maui/ViewsAkademik/InputJadwal.xaml]
+[C:/AsistenDosen/LoginApp.Maui/ViewsAkademik/InputJadwal.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LoginApp.Maui.ViewsAkademik.InputJadwal.xaml
 build_metadata.AdditionalFiles.TargetPath = ViewsAkademik\InputJadwal.xaml
 build_metadata.AdditionalFiles.RelativePath = ViewsAkademik\InputJadwal.xaml
 
-[C:/Users/LENOVO IP3/Source/Repos/Skripsi-AsistenDosen/LoginApp.Maui/ViewsAsistenDosen/HomePageAsistenDosen.xaml]
+[C:/AsistenDosen/LoginApp.Maui/ViewsAsistenDosen/HomePageAsistenDosen.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LoginApp.Maui.ViewsAsistenDosen.HomePageAsistenDosen.xaml
 build_metadata.AdditionalFiles.TargetPath = ViewsAsistenDosen\HomePageAsistenDosen.xaml
 build_metadata.AdditionalFiles.RelativePath = ViewsAsistenDosen\HomePageAsistenDosen.xaml
 
-[C:/Users/LENOVO IP3/Source/Repos/Skripsi-AsistenDosen/LoginApp.Maui/ViewsAsistenDosen/JadwalMengajar.xaml]
+[C:/AsistenDosen/LoginApp.Maui/ViewsAsistenDosen/JadwalMengajar.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LoginApp.Maui.ViewsAsistenDosen.JadwalMengajar.xaml
 build_metadata.AdditionalFiles.TargetPath = ViewsAsistenDosen\JadwalMengajar.xaml
 build_metadata.AdditionalFiles.RelativePath = ViewsAsistenDosen\JadwalMengajar.xaml
 
-[C:/Users/LENOVO IP3/Source/Repos/Skripsi-AsistenDosen/LoginApp.Maui/ViewsAsistenDosen/Pertemuan.xaml]
+[C:/AsistenDosen/LoginApp.Maui/ViewsAsistenDosen/Pertemuan.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LoginApp.Maui.ViewsAsistenDosen.Pertemuan.xaml
 build_metadata.AdditionalFiles.TargetPath = ViewsAsistenDosen\Pertemuan.xaml
 build_metadata.AdditionalFiles.RelativePath = ViewsAsistenDosen\Pertemuan.xaml
 
-[C:/Users/LENOVO IP3/Source/Repos/Skripsi-AsistenDosen/LoginApp.Maui/ViewsAsistenDosen/PresensiPage.xaml]
+[C:/AsistenDosen/LoginApp.Maui/ViewsAsistenDosen/PresensiPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LoginApp.Maui.ViewsAsistenDosen.PresensiPage.xaml
 build_metadata.AdditionalFiles.TargetPath = ViewsAsistenDosen\PresensiPage.xaml
 build_metadata.AdditionalFiles.RelativePath = ViewsAsistenDosen\PresensiPage.xaml
 
-[C:/Users/LENOVO IP3/Source/Repos/Skripsi-AsistenDosen/LoginApp.Maui/ViewsAsistenDosen/Rekapitulasi.xaml]
+[C:/AsistenDosen/LoginApp.Maui/ViewsAsistenDosen/Rekapitulasi.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LoginApp.Maui.ViewsAsistenDosen.Rekapitulasi.xaml
 build_metadata.AdditionalFiles.TargetPath = ViewsAsistenDosen\Rekapitulasi.xaml
 build_metadata.AdditionalFiles.RelativePath = ViewsAsistenDosen\Rekapitulasi.xaml
 
-[C:/Users/LENOVO IP3/Source/Repos/Skripsi-AsistenDosen/LoginApp.Maui/ViewsKaprodi/HomePageKaprodi.xaml]
+[C:/AsistenDosen/LoginApp.Maui/ViewsKaprodi/HomePageKaprodi.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LoginApp.Maui.ViewsKaprodi.HomePageKaprodi.xaml
 build_metadata.AdditionalFiles.TargetPath = ViewsKaprodi\HomePageKaprodi.xaml
 build_metadata.AdditionalFiles.RelativePath = ViewsKaprodi\HomePageKaprodi.xaml
 
-[C:/Users/LENOVO IP3/Source/Repos/Skripsi-AsistenDosen/LoginApp.Maui/ViewsKoordinator/AkunAsistenDosen.xaml]
+[C:/AsistenDosen/LoginApp.Maui/ViewsKoordinator/AkunAsistenDosen.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LoginApp.Maui.ViewsKoordinator.AkunAsistenDosen.xaml
 build_metadata.AdditionalFiles.TargetPath = ViewsKoordinator\AkunAsistenDosen.xaml
 build_metadata.AdditionalFiles.RelativePath = ViewsKoordinator\AkunAsistenDosen.xaml
 
-[C:/Users/LENOVO IP3/Source/Repos/Skripsi-AsistenDosen/LoginApp.Maui/ViewsKoordinator/AsistenDosen.xaml]
+[C:/AsistenDosen/LoginApp.Maui/ViewsKoordinator/AsistenDosen.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LoginApp.Maui.ViewsKoordinator.AsistenDosen.xaml
 build_metadata.AdditionalFiles.TargetPath = ViewsKoordinator\AsistenDosen.xaml
 build_metadata.AdditionalFiles.RelativePath = ViewsKoordinator\AsistenDosen.xaml
 
-[C:/Users/LENOVO IP3/Source/Repos/Skripsi-AsistenDosen/LoginApp.Maui/ViewsKoordinator/DataMataKuliah.xaml]
+[C:/AsistenDosen/LoginApp.Maui/ViewsKoordinator/DataMataKuliah.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LoginApp.Maui.ViewsKoordinator.DataMataKuliah.xaml
 build_metadata.AdditionalFiles.TargetPath = ViewsKoordinator\DataMataKuliah.xaml
 build_metadata.AdditionalFiles.RelativePath = ViewsKoordinator\DataMataKuliah.xaml
 
-[C:/Users/LENOVO IP3/Source/Repos/Skripsi-AsistenDosen/LoginApp.Maui/ViewsKoordinator/DetailAsistenPage.xaml]
+[C:/AsistenDosen/LoginApp.Maui/ViewsKoordinator/DetailAsistenPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LoginApp.Maui.ViewsKoordinator.DetailAsistenPage.xaml
 build_metadata.AdditionalFiles.TargetPath = ViewsKoordinator\DetailAsistenPage.xaml
 build_metadata.AdditionalFiles.RelativePath = ViewsKoordinator\DetailAsistenPage.xaml
 
-[C:/Users/LENOVO IP3/Source/Repos/Skripsi-AsistenDosen/LoginApp.Maui/ViewsKoordinator/HomePageKoordinator.xaml]
+[C:/AsistenDosen/LoginApp.Maui/ViewsKoordinator/HomePageKoordinator.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LoginApp.Maui.ViewsKoordinator.HomePageKoordinator.xaml
 build_metadata.AdditionalFiles.TargetPath = ViewsKoordinator\HomePageKoordinator.xaml
 build_metadata.AdditionalFiles.RelativePath = ViewsKoordinator\HomePageKoordinator.xaml
 
-[C:/Users/LENOVO IP3/Source/Repos/Skripsi-AsistenDosen/LoginApp.Maui/ViewsKoordinator/JadwalMengajarAsdos.xaml]
+[C:/AsistenDosen/LoginApp.Maui/ViewsKoordinator/JadwalMengajarAsdos.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LoginApp.Maui.ViewsKoordinator.JadwalMengajarAsdos.xaml
 build_metadata.AdditionalFiles.TargetPath = ViewsKoordinator\JadwalMengajarAsdos.xaml
 build_metadata.AdditionalFiles.RelativePath = ViewsKoordinator\JadwalMengajarAsdos.xaml
 
-[C:/Users/LENOVO IP3/Source/Repos/Skripsi-AsistenDosen/LoginApp.Maui/ViewsKoordinator/PersetujuanPresensi.xaml]
+[C:/AsistenDosen/LoginApp.Maui/ViewsKoordinator/PersetujuanPresensi.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LoginApp.Maui.ViewsKoordinator.PersetujuanPresensi.xaml
 build_metadata.AdditionalFiles.TargetPath = ViewsKoordinator\PersetujuanPresensi.xaml
 build_metadata.AdditionalFiles.RelativePath = ViewsKoordinator\PersetujuanPresensi.xaml
 
-[C:/Users/LENOVO IP3/Source/Repos/Skripsi-AsistenDosen/LoginApp.Maui/ViewsMahasiswa/MahasiswaHomePage.xaml]
+[C:/AsistenDosen/LoginApp.Maui/ViewsMahasiswa/MahasiswaHomePage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LoginApp.Maui.ViewsMahasiswa.MahasiswaHomePage.xaml
 build_metadata.AdditionalFiles.TargetPath = ViewsMahasiswa\MahasiswaHomePage.xaml
 build_metadata.AdditionalFiles.RelativePath = ViewsMahasiswa\MahasiswaHomePage.xaml
 
-[C:/Users/LENOVO IP3/Source/Repos/Skripsi-AsistenDosen/LoginApp.Maui/ViewsMahasiswa/RegisterMahasiswa.xaml]
+[C:/AsistenDosen/LoginApp.Maui/ViewsMahasiswa/RegisterMahasiswa.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LoginApp.Maui.ViewsMahasiswa.RegisterMahasiswa.xaml
 build_metadata.AdditionalFiles.TargetPath = ViewsMahasiswa\RegisterMahasiswa.xaml

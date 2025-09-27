@@ -4,6 +4,7 @@
              x:Class="LoginApp.Maui.ViewsMahasiswa.RegisterMahasiswa"
              Title="RegisterMahasiswa">
 
+    <ScrollView>
     <VerticalStackLayout BackgroundColor="White">
         <Grid ColumnDefinitions="Auto,*" Margin="50,20,175,0">
             <!-- Back Button -->
@@ -29,27 +30,82 @@
                    VerticalOptions="Center" />
         </Grid>
 
-        <Grid RowDefinitions="*,*,*" Margin="0,50,0,0" Padding="10" RowSpacing="10" HorizontalOptions="Center">
-            <!--Gmail-->
-            <StackLayout Orientation="Horizontal">
-                <Entry Text="{Binding Gmail}" WidthRequest="600" HeightRequest="50" HorizontalOptions="Center" Margin="10,0,0,0" Placeholder="Gmail Untar" FontAttributes="Bold"></Entry>
-            </StackLayout>
+        <!-- Nama -->
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Entry Text="{Binding Nama}"
+               WidthRequest="600"
+               HeightRequest="50"
+               Placeholder="Nama"
+               FontAttributes="Bold"
+               Margin="10,0,0,0"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+        </StackLayout>
 
-            <!--Password-->
-            <StackLayout Orientation="Horizontal" Grid.Row="1">
-                <Entry Text="{Binding Password}" IsPassword="True" WidthRequest="600" HorizontalOptions="Center" HeightRequest="50" Margin="10,0,0,0" Placeholder="Password" FontAttributes="Bold"></Entry>
-            </StackLayout>
+        <!-- Username -->
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Entry Text="{Binding Username}"
+                   WidthRequest="600"
+                   HeightRequest="50"
+                   Placeholder="NIM / Username"
+                   FontAttributes="Bold"
+                   Margin="10,0,0,0"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center" />
 
-            <!--Confirm Password-->
-            <StackLayout Orientation="Horizontal" Grid.Row="2">
-                <Entry Text="{Binding ConfirmPassword}" IsPassword="True" WidthRequest="600" HeightRequest="50" HorizontalOptions="Center" Margin="10,0,0,0" Placeholder="Konfirmasi Password" FontAttributes="Bold" />
-            </StackLayout>
-        </Grid>
-        <!--Sign Button-->
-        <Button Command="{Binding SignUpMahasiswa}" FontAttributes="Bold" Text="Sign Up" CornerRadius="10" FontSize="20" WidthRequest="180" VerticalOptions="Center" Margin="350,20,0,0"></Button>
+        </StackLayout>
 
-        <Label Text="{Binding Message}" TextColor="Red" FontAttributes="Bold" HorizontalOptions="Center" />
+         <!-- Email -->
+         <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Entry Text="{Binding Email}"
+                   WidthRequest="600"
+                   HeightRequest="50"
+                   Placeholder="Email Untar"
+                   FontAttributes="Bold"
+                   Margin="10,0,0,0"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center" />
+         </StackLayout>
 
-    </VerticalStackLayout>
+         <!-- Password -->
+         <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Entry Text="{Binding Password}"
+                IsPassword="True"
+                WidthRequest="600"
+                HeightRequest="50"
+                Placeholder="Password"
+                FontAttributes="Bold"
+                Margin="10,0,0,0"
+                HorizontalOptions="Center"
+                VerticalOptions="Center" />
+         </StackLayout>
+
+         <!-- Konfirmasi Password -->
+         <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Entry Text="{Binding ConfirmPassword}"
+                IsPassword="True"
+                WidthRequest="600"
+                HeightRequest="50"
+                Placeholder="Konfirmasi Password"
+                FontAttributes="Bold"
+                Margin="10,0,0,0"
+                HorizontalOptions="Center"
+                VerticalOptions="Center" />
+         </StackLayout>
+
+         <!-- Tombol Register -->
+         <Button Text="Register Mahasiswa"
+            Command="{Binding RegisterCommand}"
+            WidthRequest="600"
+            HeightRequest="50"
+            Margin="10,0,0,0"
+            HorizontalOptions="Center"
+            FontAttributes="Bold"
+            BackgroundColor="#007AFF"
+            TextColor="White" />
+
+
+        </VerticalStackLayout>
+    </ScrollView>
 
 </ContentPage>

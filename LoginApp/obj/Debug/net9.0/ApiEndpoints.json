@@ -120,7 +120,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "LoginApp.API.Controllers.MataKuliahController",
+    "ContainingType": "MataKuliahController",
     "Method": "GetDropdown",
     "RelativePath": "api/MataKuliah/dropdown",
     "HttpMethod": "GET",

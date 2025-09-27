@@ -3191,11 +3191,10 @@ int drawable presensi 0x7f0700eb
 int drawable rekap 0x7f0700ec
 int drawable schedule_icon 0x7f0700ed
 int drawable sign_icon 0x7f0700ee
-int drawable splash 0x7f0700ef
-int drawable test_level_drawable 0x7f0700f0
-int drawable time 0x7f0700f1
-int drawable tooltip_frame_dark 0x7f0700f2
-int drawable tooltip_frame_light 0x7f0700f3
+int drawable test_level_drawable 0x7f0700ef
+int drawable time 0x7f0700f0
+int drawable tooltip_frame_dark 0x7f0700f1
+int drawable tooltip_frame_light 0x7f0700f2
 int id ALT 0x7f080000
 int id BOTTOM_END 0x7f080001
 int id BOTTOM_START 0x7f080002

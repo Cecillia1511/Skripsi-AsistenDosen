@@ -39,9 +39,6 @@
     <None Update="Pages\TaskDetailPage.xaml">
       <SubType>Designer</SubType>
     </None>
-    <None Update="Platforms\Windows\App.xaml">
-      <SubType>Designer</SubType>
-    </None>
     <None Update="Platforms\Windows\Package.appxmanifest">
       <SubType>Designer</SubType>
     </None>

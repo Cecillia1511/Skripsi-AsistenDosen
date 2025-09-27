@@ -26,7 +26,7 @@ public class DosenController : ControllerBase
                 result.Add(new
                 {
                     Id = reader["NIP"].ToString(),
-                    Label = reader["NamaDosen"].ToString()
+                    Label = $" {reader["NIP"]} - {reader["NamaDosen"]}"
                 });
             }
             return Ok(result);

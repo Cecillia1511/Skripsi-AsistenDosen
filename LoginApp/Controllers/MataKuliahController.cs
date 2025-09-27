@@ -25,7 +25,7 @@ public class MataKuliahController : ControllerBase
                 result.Add(new
                 {
                     Id = reader["Kode_MK"].ToString(),
-                    Label = reader["NamaMK"].ToString()
+                    Label = $" {reader["Kode_MK"]} - {reader["NamaMK"]}"
                 });
             }
             return Ok(result);

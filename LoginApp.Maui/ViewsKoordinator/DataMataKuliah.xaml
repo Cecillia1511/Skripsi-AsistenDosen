@@ -2,11 +2,94 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="LoginApp.Maui.ViewsKoordinator.DataMataKuliah"
-             Title="DataMataKuliah">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             Title="DataMataKuliah"
+             BackgroundColor="#f5f5f5">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="50" Spacing="15">
+
+            <!-- Tahun Akademik -->
+            <HorizontalStackLayout Spacing="50" VerticalOptions="Center" Padding="0,0,0,50">
+                <Label Text="Tahun Perkuliahan"
+                   FontAttributes="Bold"
+                   FontSize="30"
+                   TextColor="Black"
+                   VerticalOptions="Center" />
+
+                <Button Text="{Binding SelectedTahunAkademik.Label}"
+                    Command="{Binding ToggleTahunDropdownCommand}"
+                    TextColor="Black"
+                    BorderColor="#ccc"
+                    BackgroundColor="LightGray"
+                    FontSize="25"
+                    CornerRadius="8"
+                    HeightRequest="50"
+                    WidthRequest="500"
+                    Padding="15,0" />
+            </HorizontalStackLayout>
+
+            <!-- Dropdown List -->
+            <Frame IsVisible="{Binding IsTahunDropdownVisible}"
+               BorderColor="#ddd"
+               CornerRadius="8"
+               Padding="0"
+               HasShadow="True"
+               Margin="0,-5,0,0">
+                <CollectionView ItemsSource="{Binding TahunAkademikList}"
+                            SelectionChanged="OnTahunSelected"
+                            SelectionMode="Single"
+                            HeightRequest="150"
+                            BackgroundColor="White">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Label Text="{Binding Label}"
+                               Padding="12"
+                               FontSize="16"
+                               TextColor="Black" />
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </Frame>
+
+            <!-- HEADER -->
+            <Frame BorderColor="#ccc" CornerRadius="6" Padding="5" BackgroundColor="#f9f9f9">
+                <Grid ColumnDefinitions="120,*,100,100,120,*,150,120,120,120">
+                    <Label Grid.Column="0" Text="KodeMK" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center" />
+                    <Label Grid.Column="1" Text="NamaMK" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center" />
+                    <Label Grid.Column="2" Text="SKS" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center" />
+                    <Label Grid.Column="3" Text="Kelas" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center" />
+                    <Label Grid.Column="4" Text="NIP" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center" />
+                    <Label Grid.Column="5" Text="Dosen" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center" />
+                    <Label Grid.Column="6" Text="Hari" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center" />
+                    <Label Grid.Column="7" Text="Jam Mulai" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center" />
+                    <Label Grid.Column="8" Text="Jam Selesai" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center" />
+                    <Label Grid.Column="9" Text="Ruangan" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center" />
+                </Grid>
+            </Frame>
+
+            <!-- DATA -->
+            <CollectionView ItemsSource="{Binding JadwalList}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame BorderColor="#eee" BackgroundColor="White" CornerRadius="4" Padding="5" Margin="0,2">
+                            <Grid ColumnDefinitions="120,*,100,100,120,*,150,120,120,120">
+                                <Label Grid.Column="0" Text="{Binding KodeMK}" TextColor="Black" HorizontalOptions="Center" />
+                                <Label Grid.Column="1" Text="{Binding NamaMK}" TextColor="Black" />
+                                <Label Grid.Column="2" Text="{Binding SKS}" TextColor="Black" HorizontalOptions="Center" />
+                                <Label Grid.Column="3" Text="{Binding Kelas}" TextColor="Black" HorizontalOptions="Center" />
+                                <Label Grid.Column="4" Text="{Binding NIP}" TextColor="Black" HorizontalOptions="Center" />
+                                <Label Grid.Column="5" Text="{Binding NamaDosen}" TextColor="Black" />
+                                <Label Grid.Column="6" Text="{Binding Hari}" TextColor="Black" HorizontalOptions="Center" />
+                                <Label Grid.Column="7" Text="{Binding WaktuMulai}" TextColor="Black" HorizontalOptions="Center" />
+                                <Label Grid.Column="8" Text="{Binding WaktuSelesai}" TextColor="Black" HorizontalOptions="Center" />
+                                <Label Grid.Column="9" Text="{Binding Ruangan}" TextColor="Black" HorizontalOptions="Center" />
+                            </Grid>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
 </ContentPage>

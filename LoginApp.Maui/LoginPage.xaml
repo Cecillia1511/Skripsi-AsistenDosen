@@ -40,14 +40,20 @@
             <Button Command="{Binding SignInCommand}" FontAttributes="Bold" Text="Sign In" CornerRadius="10" FontSize="20" WidthRequest="180" VerticalOptions="Center" Margin="285,20,0,0"></Button>
         
             <!--Sign Up-->
-            <!--<StackLayout Margin="0,35,0,0" Orientation="Horizontal" HorizontalOptions="Center">
+            <StackLayout Margin="0,35,0,50" Orientation="Horizontal" HorizontalOptions="Center">
                 <Label Text="New User?" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Blue" FontSize="Small"></Label>
-                <Button Text="Sign Up" FontSize="Small" TextColor="Green" FontAttributes="Bold" BorderWidth="0" VerticalOptions="Center" WidthRequest="100" Margin="40,0,0,0" BackgroundColor="Transparent"> </Button>
-            </StackLayout>-->
-        
-            <!--Button Mahasiswa-->
-            <Button x:Name="LoginMahasiswa" Clicked="SignInMahasiswaButton_Clicked" Text="Login Mahasiswa" BackgroundColor="DarkRed" FontAttributes="Bold" CornerRadius="10" FontSize="20" WidthRequest="300" Margin="0,75,0,100"></Button>
-        
+                <Button Text="Sign Up" 
+                    Command="{Binding SignUpCommand}"
+                    FontSize="Small" 
+                    TextColor="Green" 
+                    FontAttributes="Bold" 
+                    BorderWidth="0" 
+                    VerticalOptions="Center" 
+                    WidthRequest="100" 
+                    Margin="40,0,0,0" 
+                    BackgroundColor="Transparent" />
+            </StackLayout>
+
         </VerticalStackLayout>
 
     </ScrollView>
